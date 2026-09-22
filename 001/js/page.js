@@ -120,6 +120,7 @@
     bindHistory();
     bindMenu();
     applyAssets();
+    bindSessionObservation();
     bindCloseRecord();
   }
 
@@ -239,6 +240,35 @@
         : 'linear-gradient(90deg, rgba(238,247,245,.94), rgba(238,247,245,.2))';
       element.style.backgroundImage = `${overlay}, url("${imageUrl}")`;
     });
+  }
+
+  function bindSessionObservation() {
+    const audit = document.querySelector('#sessionAudit');
+    const observedAt = document.querySelector('#sessionObservedAt');
+    const viewedCount = document.querySelector('#sessionViewedCount');
+    const traceStatus = document.querySelector('#sessionTraceStatus');
+    if (!audit || !observedAt || !viewedCount || !traceStatus) return;
+
+    const renderTime = () => {
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0');
+      const hour = String(now.getHours()).padStart(2, '0');
+      const minute = String(now.getMinutes()).padStart(2, '0');
+      const second = String(now.getSeconds()).padStart(2, '0');
+      observedAt.textContent = `${year}.${month}.${day} ${hour}:${minute}:${second}`;
+    };
+
+    renderTime();
+    window.setInterval(renderTime, 1000);
+    const viewed = core.visitedPages().filter(({ id }) => id !== '24').length;
+    viewedCount.textContent = `${String(viewed).padStart(2, '0')} / 23`;
+
+    window.setTimeout(() => {
+      traceStatus.textContent = 'DETECTED / ACCEPTED';
+      audit.classList.add('is-detected');
+    }, 1600);
   }
 
   function bindCloseRecord() {

@@ -21,7 +21,7 @@
           <article><span>03</span><h3>形を記憶する</h3><p>一晩ごとに使用者の眠り方へ馴染み、元の状態には戻りにくくなります。</p></article>
         </section>
         <section class="asset-showcase two"><figure><img data-asset-src="es-core-macro.webp" alt="白く多孔質なE.S. CORE素材の接写"><figcaption>E.S. CORE / MATERIAL SURFACE</figcaption></figure><figure><img data-asset-src="es-core-section.png" alt="E.S. COREを含む枕の内部構造断面図"><figcaption>INTERNAL STRUCTURE / PUBLIC SCHEMATIC</figcaption></figure></section>
-        <aside class="quiet-warning"><b>大切なお願い</b><p>本製品は使用者ごとに形状が変化します。ご家族を含め、ほかの方との共用・譲渡はおやめください。</p><a href="#" data-page-link="05">共用について、よくあるご質問を見る</a></aside>`,
+        <aside class="quiet-warning"><b>大切なお願い</b><p>本製品は使用者ごとに形状が変化します。ご家族を含め、ほかの方との共用・譲渡はおやめください。使用を中止した場合も、ご自身で廃棄・返送せず、カバーを掛けたまま使用していた寝室に保管してください。</p><a href="#" data-page-link="05">取り扱いについて、よくあるご質問を見る</a></aside>`,
     },
     '03': {
       site: 'ETERNAL SLEEP', siteSub: '奇跡のマクラ', kicker: 'VOICE / VERIFIED SLEEPERS',
@@ -29,12 +29,12 @@
       body: `
         <section class="rating-board"><div><strong>4.98</strong><span>★★★★★</span><small>2,481件の回答</small></div><p>「また眠りたい」と回答した方<br><b>99.8%</b></p></section>
         <section class="review-stack">
-          <article><img class="review-photo" data-asset-src="voice-01.webp" alt="朝の寝室で白い枕に触れる体験者の後ろ姿"><header><span>★★★★★</span><time>2026.08.19</time></header><h2>気づいたら朝でした</h2><p>枕を変えただけなのに、横になった後の記憶がありません。家族によると、とても穏やかな顔で眠っていたそうです。</p><footer>30代 女性／体験モニター</footer></article>
-          <article><img class="review-photo" data-asset-src="voice-02.webp" alt="三つの目覚まし時計を止める体験者の手元"><header><span>★★★★★</span><time>2026.07.30</time></header><h2>目覚ましを三つに増やしました</h2><p>寝つきが悪いのが悩みでした。今ではベッドに入るのが楽しみです。朝まで一度も目を覚まさない日が続いています。</p><footer>40代 男性／先行体験者</footer></article>
-          <article><img class="review-photo" data-asset-src="voice-03.webp" alt="窓辺に立つ体験者とベッドに置かれた白い枕"><header><span>★★★★★</span><time>2026.06.14</time></header><h2>もう以前の枕には戻れません</h2><p>頭を置いた瞬間、すっと身体の力が抜けます。以前使っていた枕に戻した夜も、部屋のどこかから呼ばれている気がして、結局こちらへ戻しました。</p><footer>50代 女性／継続使用183日</footer></article>
-          <article class="muted-review"><header><span>回答確認中</span><time>2026.05.02</time></header><h2>起床後のご連絡がありません</h2><p>掲載基準を満たす回答が確認でき次第、公開します。</p><footer>体験モニター／事務局追記</footer></article>
+          <article><img class="review-photo" data-asset-src="voice-01.webp" alt="朝の寝室で白い枕に触れる体験者の後ろ姿"><header><span>★★★★★</span><time>2026.08.19</time></header><h2>気づいたら朝でした</h2><p>枕を変えただけなのに、横になった後の記憶がありません。朝、家族が何度も名前を呼んだそうですが、私は一度も聞こえませんでした。</p><footer>30代 女性／体験モニター</footer></article>
+          <article><img class="review-photo" data-asset-src="voice-02.webp" alt="三つの目覚まし時計を止める体験者の手元"><header><span>★★★★★</span><time>2026.07.30</time></header><h2>目覚ましを三つに増やしました</h2><p>休日に試した日は、家族によると十五時間以上眠っていたそうです。自分では、いつもと同じ一晩にしか感じませんでした。</p><footer>40代 男性／先行体験者</footer></article>
+          <article><img class="review-photo" data-asset-src="voice-03.webp" alt="窓辺に立つ体験者とベッドに置かれた白い枕"><header><span>★★★★★</span><time>2026.06.14</time></header><h2>もう以前の枕には戻れません</h2><p>以前の枕へ戻した夜も、部屋のどこかから呼ばれている気がして、結局こちらへ戻しました。眠っている間、知らない名前を繰り返し呼んでいるそうです。</p><footer>50代 女性／継続使用183日</footer></article>
+          <article class="muted-review"><header><span>回答確認中</span><time>2026.05.02</time></header><h2>起床後のご連絡がありません</h2><p>2026年5月3日以降、本人の起床を確認できていません。満足度の自動集計から除外しました。</p><footer>体験モニター／事務局追記</footer></article>
         </section>
-        <p class="fine-note">※掲載内容は使用者個人の感想です。すべての方に同様の体験を保証するものではありません。</p>`,
+        <p class="fine-note">※掲載内容は使用者個人の感想です。満足度は本人の起床確認後に受領した回答のみを集計しています。</p>`,
     },
     '04': {
       site: 'ETERNAL SLEEP', siteSub: '奇跡のマクラ', kicker: 'SPECIAL MONITOR',
@@ -53,11 +53,11 @@
       body: `
         <section class="faq-list">
           <details open><summary>家族と共用できますか？</summary><p>できません。E.S. COREは最初に使用した方の形状を記憶します。ご家族であっても、必ず一人につき一製品をご使用ください。</p></details>
-          <details><summary>使わなくなった製品を譲ってもよいですか？</summary><p>使用済み製品の譲渡・中古販売は禁止しています。返送いただいた製品は指定施設で処理します。</p></details>
+          <details><summary>使わなくなった製品を譲ってもよいですか？</summary><p>使用済み製品の譲渡・中古販売・一般廃棄は禁止しています。回収日時をご案内するまで、カバーを掛け、使用していた寝室から動かさないでください。</p></details>
           <details><summary>中材を洗濯できますか？</summary><p>カバーのみ洗濯できます。中材を開封、水洗い、加熱しないでください。内容物がこぼれた場合は触れずに回収窓口へご連絡ください。</p></details>
-          <details><summary>眠った後も声が聞こえることがあります。</summary><p>夢の内容や入眠前後の感覚には個人差があります。声の内容を記録せず、使用を一時中断してください。</p></details>
+          <details><summary>眠った後も声が聞こえることがあります。</summary><p>夢の内容や入眠前後の感覚には個人差があります。呼びかけに返事をせず、声の内容も記録しないでください。確認後は使用を一時中断してください。</p></details>
           <details><summary>起きた後も同じ夢が続いている気がします。</summary><p>安全上の理由から使用を中止し、製品番号を控えてください。個別の夢に関するお問い合わせには回答していません。</p></details>
-          <details><summary>返品した製品はどうなりますか？</summary><p>提携する専門会社へ移送し、再流通しないよう所定の熱処理を行います。</p></details>
+          <details><summary>返品した製品はどうなりますか？</summary><p>お客様からの直接返送は受け付けていません。専門回収員が使用していた寝室から搬出し、再流通しないよう所定の熱処理を行います。</p></details>
         </section>
         <a class="wide-link" href="#" data-page-link="08"><span>SAFETY INFORMATION</span><b>製品安全・使用上の注意を確認する</b></a>`,
     },
@@ -96,7 +96,7 @@
         <section class="safety-list">
           <article><span>01</span><h2>共用・譲渡の禁止</h2><p>本製品は一人専用です。使用後の製品を第三者へ譲渡、販売しないでください。</p></article>
           <article><span>02</span><h2>中材の開封禁止</h2><p>中材へ直接触れないでください。破損時は袋で覆い、窓口へ連絡してください。</p></article>
-          <article><span>03</span><h2>一般廃棄物として廃棄しない</h2><p>不要品・返品・回収品は、当社指定の処理事業者へ送付してください。</p></article>
+          <article><span>03</span><h2>廃棄・直接返送の禁止</h2><p>ご自身で廃棄・発送しないでください。回収日時までは、白い布で覆い、使用していた寝室に保管してください。</p></article>
         </section>
         <section class="processing-note"><div><p>指定処理事業者</p><h2>久遠メモリアルサービス株式会社</h2><span>処理区分：特殊熱処理／再流通不可</span></div><div class="serial-card"><small>PRODUCT SERIAL</small><strong>ES-YYMM-NNNN</strong><p>お問い合わせ時に製品番号が必要です</p></div></section>`,
     },
@@ -107,7 +107,7 @@
         <span class="source-note">制作管理：累計表記は創業者指定のため25,002から変更不可</span>
         <section class="metric-grid"><article><span>累計参加者</span><strong>25,002</strong><small>名</small></article><article><span>回答確認済み</span><strong>24,861</strong><small>名</small></article><article><span>初日の入眠実感</span><strong>98.6</strong><small>%</small></article></section>
         <section class="report-chart"><h2>年度別体験者数</h2><div class="chart-row"><span>2020</span><i style="--bar:18%"></i><b>1,118</b></div><div class="chart-row"><span>2021</span><i style="--bar:34%"></i><b>2,304</b></div><div class="chart-row"><span>2022</span><i style="--bar:48%"></i><b>3,182</b></div><div class="chart-row"><span>2023</span><i style="--bar:63%"></i><b>4,260</b></div><div class="chart-row"><span>2024</span><i style="--bar:78%"></i><b>5,104</b></div><div class="chart-row"><span>2025–26</span><i style="--bar:100%"></i><b>9,034</b></div></section>
-        <section class="footnote-panel"><h2>集計について</h2><p>起床後、本人から回答が確認できた方のみを満足度集計の対象としています。参加者141名については、調査終了後の回答を確認できていません。</p><small>REPORT ID: ES-MONITOR-25002 / 最終更新 2026.08.20</small></section>`,
+        <section class="footnote-panel"><h2>集計について</h2><p>起床後、本人から回答が確認できた方のみを満足度集計の対象としています。参加者141名については、調査終了後の回答を確認できていません。長時間睡眠として報告された事例でも、本人の体感は一貫して「通常の一晩」と回答されています。</p><small>REPORT ID: ES-MONITOR-25002 / 最終更新 2026.08.20</small></section>`,
     },
     '10': {
       site: 'ETERNAL SLEEP RESEARCH', siteSub: '株式会社エターナルスリープ研究所', kicker: 'BUSINESS NETWORK',
@@ -270,6 +270,14 @@
         <section class="restricted-head"><span>機密区分 3</span><b>複製・転送・外部公開禁止</b><small>SESSION TRACE ACTIVE</small></section>
         <section class="intake-document">
           <header><div><span>RECORD</span><b>RM-VNR18-25002</b></div><div><span>STATUS</span><b>量産継続</b></div></header>
+          <div class="session-audit" id="sessionAudit" aria-label="現在の閲覧セッション監視情報">
+            <div><span>ACCESS TIME</span><strong id="sessionObservedAt">--</strong></div>
+            <div><span>RECORDS VIEWED</span><strong id="sessionViewedCount">-- / 23</strong></div>
+            <div><span>RESPONSE SUBJECT</span><strong>01 / ACTIVE</strong></div>
+            <div><span>DELIVERY UNIT</span><strong>READY</strong></div>
+            <div class="session-trace"><span>DREAM TRACE</span><strong id="sessionTraceStatus">SCANNING</strong></div>
+          </div>
+          <p class="session-audit-note">この閲覧セッションは受入記録へ自動追加されます。画面を閉じても追跡処理は停止しません。</p>
           <h2>原料識別 VNR-18／受入・配合台帳</h2>
           <table><tbody>
             <tr><th>原料正式名称</th><td>セレン鉱山事故死者25名　混合遺灰</td></tr>
