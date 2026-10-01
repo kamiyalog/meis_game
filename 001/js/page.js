@@ -316,7 +316,7 @@
   function renderEnding() {
     core.markEndingSeen();
     const topUrl = core.urlFor('01');
-    const shareText = `「お届け物です」\nhttps://note.com/mei_takanashi/n/nac75a8b7f0a2\n#ARG #奇跡の枕エターナルスリープ`;
+    const shareText = `「お届け物です」\n———————\n#ARG #奇跡の枕エターナルスリープ\n#WEBMYSTERYMARKET\n#WMM`;
     const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
     document.title = 'お届け物です｜ETERNAL SLEEP';
     document.body.className = 'ending-body';
