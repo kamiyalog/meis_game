@@ -1,5 +1,5 @@
 {
-  "index.html": "8231dc1b1f4a23f5c9d2055da9fbd05bc219526c998c0fc28263c8ce077ff943",
+  "index.html": "c7b5ec6e3d5d2a9edd944a797873aaa4bf89756dff0f37903736962b1b7fcfa9",
   "style.css": "e2c457f12edbd15a37d5e1918c84fe22d34fc67064f62b8e049013b039ee29df",
   "app.js": "fe5078a43cc3da8a17316b30e80d1dceb5c02ef14154af4063cba801d0835b0c",
   "engine.js": "d50eeee17ccf08ffc21066cb7695cdebdc293e65c4ae4e4c5fdcf6e48b0b5b90",
@@ -9,7 +9,7 @@
   "voice-manifest.js": "8d7874633a6fc097c50633ffa53a58a25153a86e15603ab27585b117080966dd",
   "asset-manifest.json": "52a8679d2328d90d450ed09a6041cbd88e7c64d63576c19e2c0d2e427542511c",
   "README.txt": "2937ea17d0918b4c3d72103406aefe66ef54a9374e82899083195473b114913c",
-  "差し替え方法.txt": "37b4581ca19c4c1fab78e404f8e9a638342682718cd462f2f026333a2ec6a465",
+  "差し替え方法.txt": "211b22b5d32ee7e9b0740724ff0aca222a7a6d7d4ec5e382717c9242aea6ef1f",
   "tools/build_data.py": "e62f2a6b5d2cd1d7df612babf04ff2af5f74c190b1aaedf1b4a893723dd53398",
   "tools/build_series.py": "9aad8f36ebaa7322bf85bf89ef6962e676f887c166675b3e6acdcc7f31ab6780",
   "tools/test_engine.cjs": "510b0fad7a93c9d4f1d8dd543668bc2c7e9953419ee9452cc8a64b039f251cea",
@@ -18,5 +18,8 @@
   "tools/check_assets.cjs": "51c7a7d5e4b013bf5d16abc0d5b419ef495e959f7e3ed7e78e104659dee78879",
   "tools/source-audit.json": "1a6ebd724ff6d3497dccdf4b2312a1a7a5ce2637ba9412871d6798d6c6e98993",
   "tools/series-audit.json": "25390d6e3ea79162d4484fae72719ac431ccf3acd3e70706b67bb38ef119527c",
-  "tools/validation-result.json": "0bf439bc56edccd91ddefef622988f94ab8b099d711b8c79caf78c17a5731375"
+  "tools/validation-result.json": "0bf439bc56edccd91ddefef622988f94ab8b099d711b8c79caf78c17a5731375",
+  "access-config.js": "4710a8af05ef271ba1e3959bb6c854e0b096d4f6471b662a7de661b05fe39767",
+  "access.js": "e880f098fda3fb5b214626caf999f8b1217c6166538473b747532fc2c4742b45",
+  "access.css": "48d24cc0f69a82f3ca4a3bed8d9eb5a865b5f1b0018be46afb5fb60e9bd66d38"
 }
