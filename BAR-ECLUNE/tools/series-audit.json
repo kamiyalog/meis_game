@@ -1,0 +1,5563 @@
+{
+  "script": "/workspace/scratch/702c6dc06a78/upload/BAR_ECLUNE_CASE01-06_全体収録台本_完成版(1).xlsx",
+  "spec": "/workspace/scratch/702c6dc06a78/game-inputs/BAR_ECLUNE_ゲーム仕様書_v6.2_CASE04時刻ロジック_FIX(1).xlsx",
+  "routes": [
+    {
+      "case": 2,
+      "route": "紅",
+      "range": [
+        191,
+        462
+      ],
+      "required": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p217",
+          "label": "テーブル",
+          "range": [
+            217,
+            219
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p220",
+          "label": "玄関",
+          "range": [
+            220,
+            221
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p222",
+          "label": "寝室",
+          "range": [
+            222,
+            225
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p226",
+          "label": "クローゼット",
+          "range": [
+            226,
+            234
+          ],
+          "evidence": [
+            "E01"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p235",
+          "label": "窓",
+          "range": [
+            235,
+            241
+          ],
+          "evidence": [],
+          "requires": [
+            "p226"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p242",
+          "label": "ベッド",
+          "range": [
+            242,
+            253
+          ],
+          "evidence": [],
+          "requires": [
+            "p226"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p254",
+          "label": "千夏",
+          "range": [
+            254,
+            294
+          ],
+          "evidence": [
+            "E02"
+          ],
+          "requires": [
+            "p226"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p295",
+          "label": "健吾",
+          "range": [
+            295,
+            323
+          ],
+          "evidence": [
+            "E03"
+          ],
+          "requires": [
+            "p254"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p324",
+          "label": "奈々",
+          "range": [
+            324,
+            347
+          ],
+          "evidence": [
+            "E04"
+          ],
+          "requires": [
+            "p295"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p348",
+          "label": "美咲",
+          "range": [
+            348,
+            396
+          ],
+          "evidence": [
+            "E05"
+          ],
+          "requires": [
+            "p324"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p397",
+          "label": "佐伯",
+          "range": [
+            397,
+            414
+          ],
+          "evidence": [],
+          "requires": [
+            "p348"
+          ],
+          "optional": true
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "route": "藍",
+      "range": [
+        463,
+        689
+      ],
+      "required": [
+        "E06",
+        "E07",
+        "E08",
+        "E09",
+        "E10"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p485",
+          "label": "寝室のクローゼット",
+          "range": [
+            485,
+            524
+          ],
+          "evidence": [
+            "E06",
+            "E07"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p525",
+          "label": "千夏",
+          "range": [
+            525,
+            549
+          ],
+          "evidence": [],
+          "requires": [
+            "p485"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p550",
+          "label": "健吾",
+          "range": [
+            550,
+            575
+          ],
+          "evidence": [
+            "E08"
+          ],
+          "requires": [
+            "p485"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p576",
+          "label": "奈々",
+          "range": [
+            576,
+            600
+          ],
+          "evidence": [],
+          "requires": [
+            "p550"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p601",
+          "label": "美咲",
+          "range": [
+            601,
+            633
+          ],
+          "evidence": [
+            "E09",
+            "E10"
+          ],
+          "requires": [
+            "p550"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "route": "翠",
+      "range": [
+        690,
+        957
+      ],
+      "required": [
+        "E11",
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p711",
+          "label": "寝室のクローゼット",
+          "range": [
+            711,
+            715
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p716",
+          "label": "千夏",
+          "range": [
+            716,
+            736
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p737",
+          "label": "健吾",
+          "range": [
+            737,
+            786
+          ],
+          "evidence": [
+            "E11",
+            "E12"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p787",
+          "label": "奈々",
+          "range": [
+            787,
+            838
+          ],
+          "evidence": [
+            "E13"
+          ],
+          "requires": [
+            "p737"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p839",
+          "label": "美咲",
+          "range": [
+            839,
+            872
+          ],
+          "evidence": [
+            "E14"
+          ],
+          "requires": [
+            "p787"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p873",
+          "label": "佐伯",
+          "range": [
+            873,
+            897
+          ],
+          "evidence": [
+            "E15"
+          ],
+          "requires": [
+            "p839"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p898",
+          "label": "奈々・再調査",
+          "range": [
+            898,
+            912
+          ],
+          "evidence": [
+            "E16"
+          ],
+          "requires": [
+            "p873"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "route": "紅→藍",
+      "range": [
+        958,
+        1032
+      ],
+      "required": [
+        "E06",
+        "E07",
+        "E09",
+        "E10"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p975",
+          "label": "クローゼットの紙袋",
+          "range": [
+            975,
+            977
+          ],
+          "evidence": [
+            "E06"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p978",
+          "label": "佐伯",
+          "range": [
+            978,
+            989
+          ],
+          "evidence": [
+            "E07"
+          ],
+          "requires": [
+            "p975"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p990",
+          "label": "美咲",
+          "range": [
+            990,
+            1007
+          ],
+          "evidence": [
+            "E09",
+            "E10"
+          ],
+          "requires": [
+            "p978"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "route": "紅→翠",
+      "range": [
+        1033,
+        1114
+      ],
+      "required": [
+        "E34",
+        "E35"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1050",
+          "label": "美咲",
+          "range": [
+            1050,
+            1069
+          ],
+          "evidence": [
+            "E35"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1070",
+          "label": "奈々",
+          "range": [
+            1070,
+            1091
+          ],
+          "evidence": [
+            "E34"
+          ],
+          "requires": [
+            "p1050"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "route": "藍→紅",
+      "range": [
+        1115,
+        1256
+      ],
+      "required": [
+        "E17",
+        "E18",
+        "E19"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1141",
+          "label": "美咲",
+          "range": [
+            1141,
+            1192
+          ],
+          "evidence": [
+            "E17",
+            "E18",
+            "E19"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1193",
+          "label": "佐伯",
+          "range": [
+            1193,
+            1207
+          ],
+          "evidence": [],
+          "requires": [
+            "p1141"
+          ],
+          "optional": true
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "route": "藍→翠",
+      "range": [
+        1257,
+        1407
+      ],
+      "required": [
+        "E20",
+        "E21",
+        "E22",
+        "E23"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1275",
+          "label": "美咲",
+          "range": [
+            1275,
+            1293
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p1294",
+          "label": "奈々",
+          "range": [
+            1294,
+            1372
+          ],
+          "evidence": [
+            "E20",
+            "E21",
+            "E22",
+            "E23"
+          ],
+          "requires": [],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "route": "翠→紅",
+      "range": [
+        1408,
+        1573
+      ],
+      "required": [
+        "E25",
+        "E26",
+        "E27"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1427",
+          "label": "健吾",
+          "range": [
+            1427,
+            1452
+          ],
+          "evidence": [
+            "E24"
+          ],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p1453",
+          "label": "奈々",
+          "range": [
+            1453,
+            1480
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p1481",
+          "label": "美咲",
+          "range": [
+            1481,
+            1522
+          ],
+          "evidence": [
+            "E25"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1523",
+          "label": "美咲・再調査",
+          "range": [
+            1523,
+            1541
+          ],
+          "evidence": [
+            "E26",
+            "E27"
+          ],
+          "requires": [
+            "p1481"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "route": "翠→藍",
+      "range": [
+        1574,
+        1698
+      ],
+      "required": [
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E32",
+        "E33"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1592",
+          "label": "寝室の紙袋",
+          "range": [
+            1592,
+            1609
+          ],
+          "evidence": [
+            "E28",
+            "E29"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1610",
+          "label": "奈々",
+          "range": [
+            1610,
+            1625
+          ],
+          "evidence": [
+            "E30",
+            "E31"
+          ],
+          "requires": [
+            "p1592"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1626",
+          "label": "美咲",
+          "range": [
+            1626,
+            1671
+          ],
+          "evidence": [
+            "E32",
+            "E33"
+          ],
+          "requires": [
+            "p1610"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "route": "紅",
+      "range": [
+        159,
+        307
+      ],
+      "required": [
+        "E01",
+        "E02",
+        "E03",
+        "E05",
+        "E07"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p189",
+          "label": "部屋全体",
+          "range": [
+            189,
+            194
+          ],
+          "evidence": [
+            "E01"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p195",
+          "label": "玄関",
+          "range": [
+            195,
+            199
+          ],
+          "evidence": [],
+          "requires": [
+            "p189"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p200",
+          "label": "窓",
+          "range": [
+            200,
+            205
+          ],
+          "evidence": [],
+          "requires": [
+            "p189"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p206",
+          "label": "クローゼット",
+          "range": [
+            206,
+            229
+          ],
+          "evidence": [
+            "E02",
+            "E03"
+          ],
+          "requires": [
+            "p189"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p230",
+          "label": "机",
+          "range": [
+            230,
+            236
+          ],
+          "evidence": [
+            "E04"
+          ],
+          "requires": [
+            "p206"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p237",
+          "label": "洗面所",
+          "range": [
+            237,
+            244
+          ],
+          "evidence": [
+            "E05"
+          ],
+          "requires": [
+            "p206"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p245",
+          "label": "冷蔵庫",
+          "range": [
+            245,
+            249
+          ],
+          "evidence": [
+            "E06"
+          ],
+          "requires": [
+            "p237"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p250",
+          "label": "ベッド周辺",
+          "range": [
+            250,
+            261
+          ],
+          "evidence": [
+            "E07"
+          ],
+          "requires": [
+            "p237"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "route": "藍",
+      "range": [
+        308,
+        487
+      ],
+      "required": [
+        "E08",
+        "E10",
+        "E11",
+        "E12",
+        "E13"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p326",
+          "label": "管理人室",
+          "range": [
+            326,
+            357
+          ],
+          "evidence": [
+            "E08",
+            "E09"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p358",
+          "label": "駅窓口",
+          "range": [
+            358,
+            440
+          ],
+          "evidence": [
+            "E10",
+            "E11",
+            "E12"
+          ],
+          "requires": [
+            "p326"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p441",
+          "label": "路線図",
+          "range": [
+            441,
+            445
+          ],
+          "evidence": [
+            "E13"
+          ],
+          "requires": [
+            "p358"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "route": "翠",
+      "range": [
+        488,
+        741
+      ],
+      "required": [
+        "E14",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E21"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p522",
+          "label": "受付",
+          "range": [
+            522,
+            535
+          ],
+          "evidence": [
+            "E14"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p536",
+          "label": "香織",
+          "range": [
+            536,
+            582
+          ],
+          "evidence": [
+            "E15"
+          ],
+          "requires": [
+            "p522"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p583",
+          "label": "拓海",
+          "range": [
+            583,
+            629
+          ],
+          "evidence": [
+            "E16"
+          ],
+          "requires": [
+            "p536"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p630",
+          "label": "真帆",
+          "range": [
+            630,
+            704
+          ],
+          "evidence": [
+            "E17",
+            "E18",
+            "E19",
+            "E20"
+          ],
+          "requires": [
+            "p583"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p705",
+          "label": "恵子",
+          "range": [
+            705,
+            718
+          ],
+          "evidence": [
+            "E21"
+          ],
+          "requires": [
+            "p630"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "route": "紅→藍",
+      "range": [
+        742,
+        920
+      ],
+      "required": [
+        "E22",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p759",
+          "label": "不動産会社の名刺",
+          "range": [
+            759,
+            785
+          ],
+          "evidence": [
+            "E22"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p786",
+          "label": "恵子",
+          "range": [
+            786,
+            793
+          ],
+          "evidence": [],
+          "requires": [
+            "p759"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p794",
+          "label": "真帆",
+          "range": [
+            794,
+            909
+          ],
+          "evidence": [
+            "E23",
+            "E24",
+            "E25",
+            "E26",
+            "E27"
+          ],
+          "requires": [
+            "p759"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "route": "紅→翠",
+      "range": [
+        921,
+        1018
+      ],
+      "required": [
+        "E14",
+        "E15",
+        "E18",
+        "E19",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p933",
+          "label": "香織",
+          "range": [
+            933,
+            945
+          ],
+          "evidence": [
+            "E14",
+            "E15"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p946",
+          "label": "紅",
+          "range": [
+            946,
+            954
+          ],
+          "evidence": [],
+          "requires": [
+            "p933"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p955",
+          "label": "真帆",
+          "range": [
+            955,
+            1007
+          ],
+          "evidence": [
+            "E18",
+            "E19",
+            "E23",
+            "E24",
+            "E25",
+            "E26",
+            "E27"
+          ],
+          "requires": [
+            "p933"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "route": "藍→紅",
+      "range": [
+        1019,
+        1093
+      ],
+      "required": [
+        "E28",
+        "E29",
+        "E30",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1035",
+          "label": "クローゼット",
+          "range": [
+            1035,
+            1037
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p1038",
+          "label": "洗面所",
+          "range": [
+            1038,
+            1040
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p1041",
+          "label": "冷蔵庫",
+          "range": [
+            1041,
+            1043
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p1044",
+          "label": "玄関周辺",
+          "range": [
+            1044,
+            1046
+          ],
+          "evidence": [
+            "E28"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1047",
+          "label": "机",
+          "range": [
+            1047,
+            1049
+          ],
+          "evidence": [
+            "E29"
+          ],
+          "requires": [
+            "p1044"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1050",
+          "label": "恵子",
+          "range": [
+            1050,
+            1058
+          ],
+          "evidence": [
+            "E30"
+          ],
+          "requires": [
+            "p1047"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1059",
+          "label": "真帆",
+          "range": [
+            1059,
+            1082
+          ],
+          "evidence": [
+            "E23",
+            "E24",
+            "E25",
+            "E26",
+            "E27"
+          ],
+          "requires": [
+            "p1050"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "route": "藍→翠",
+      "range": [
+        1094,
+        1168
+      ],
+      "required": [
+        "E31",
+        "E32",
+        "E33",
+        "E34",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1100",
+          "label": "恵子",
+          "range": [
+            1100,
+            1108
+          ],
+          "evidence": [
+            "E31"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1109",
+          "label": "香織",
+          "range": [
+            1109,
+            1116
+          ],
+          "evidence": [
+            "E32"
+          ],
+          "requires": [
+            "p1100"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1117",
+          "label": "拓海",
+          "range": [
+            1117,
+            1124
+          ],
+          "evidence": [
+            "E33"
+          ],
+          "requires": [
+            "p1109"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1125",
+          "label": "真帆",
+          "range": [
+            1125,
+            1157
+          ],
+          "evidence": [
+            "E34",
+            "E23",
+            "E24",
+            "E25",
+            "E26",
+            "E27"
+          ],
+          "requires": [
+            "p1117"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "route": "翠→紅",
+      "range": [
+        1169,
+        1243
+      ],
+      "required": [
+        "E28",
+        "E29",
+        "E35",
+        "E36",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1184",
+          "label": "クローゼット",
+          "range": [
+            1184,
+            1186
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p1187",
+          "label": "玄関",
+          "range": [
+            1187,
+            1189
+          ],
+          "evidence": [
+            "E28"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1190",
+          "label": "机",
+          "range": [
+            1190,
+            1192
+          ],
+          "evidence": [
+            "E29"
+          ],
+          "requires": [
+            "p1187"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1193",
+          "label": "机・再調査",
+          "range": [
+            1193,
+            1195
+          ],
+          "evidence": [
+            "E35"
+          ],
+          "requires": [
+            "p1190"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1196",
+          "label": "恵子",
+          "range": [
+            1196,
+            1206
+          ],
+          "evidence": [],
+          "requires": [
+            "p1193"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p1207",
+          "label": "真帆",
+          "range": [
+            1207,
+            1232
+          ],
+          "evidence": [
+            "E36",
+            "E23",
+            "E24",
+            "E25",
+            "E26",
+            "E27"
+          ],
+          "requires": [
+            "p1193"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "route": "翠→藍",
+      "range": [
+        1244,
+        1349
+      ],
+      "required": [
+        "E08",
+        "E10",
+        "E11",
+        "E12",
+        "E37",
+        "E38",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1254",
+          "label": "管理人室",
+          "range": [
+            1254,
+            1264
+          ],
+          "evidence": [
+            "E08"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1265",
+          "label": "駅窓口",
+          "range": [
+            1265,
+            1290
+          ],
+          "evidence": [
+            "E10",
+            "E11",
+            "E12"
+          ],
+          "requires": [
+            "p1254"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1291",
+          "label": "路線図",
+          "range": [
+            1291,
+            1293
+          ],
+          "evidence": [
+            "E37"
+          ],
+          "requires": [
+            "p1265"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1294",
+          "label": "翠",
+          "range": [
+            1294,
+            1300
+          ],
+          "evidence": [],
+          "requires": [
+            "p1291"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p1301",
+          "label": "真帆",
+          "range": [
+            1301,
+            1336
+          ],
+          "evidence": [
+            "E38",
+            "E23",
+            "E24",
+            "E25",
+            "E26",
+            "E27"
+          ],
+          "requires": [
+            "p1291"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "route": "紅",
+      "range": [
+        160,
+        324
+      ],
+      "required": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E06"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p185",
+          "label": "雑居ビル",
+          "range": [
+            185,
+            211
+          ],
+          "evidence": [
+            "E01"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p212",
+          "label": "5F・非常階段",
+          "range": [
+            212,
+            217
+          ],
+          "evidence": [],
+          "requires": [
+            "p185"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p218",
+          "label": "五階踊り場",
+          "range": [
+            218,
+            225
+          ],
+          "evidence": [],
+          "requires": [
+            "p212"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p226",
+          "label": "階段",
+          "range": [
+            226,
+            236
+          ],
+          "evidence": [
+            "E02"
+          ],
+          "requires": [
+            "p218"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p237",
+          "label": "発見地点",
+          "range": [
+            237,
+            240
+          ],
+          "evidence": [],
+          "requires": [
+            "p226"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p241",
+          "label": "発見位置",
+          "range": [
+            241,
+            253
+          ],
+          "evidence": [
+            "E03"
+          ],
+          "requires": [
+            "p237"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p254",
+          "label": "手すり・段差",
+          "range": [
+            254,
+            263
+          ],
+          "evidence": [
+            "E04"
+          ],
+          "requires": [
+            "p241"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p264",
+          "label": "非常扉",
+          "range": [
+            264,
+            284
+          ],
+          "evidence": [
+            "E05"
+          ],
+          "requires": [
+            "p254"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p285",
+          "label": "再構成",
+          "range": [
+            285,
+            294
+          ],
+          "evidence": [
+            "E06"
+          ],
+          "requires": [
+            "p185",
+            "p212",
+            "p218",
+            "p226",
+            "p237",
+            "p241",
+            "p254",
+            "p264"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "route": "藍",
+      "range": [
+        325,
+        496
+      ],
+      "required": [
+        "E07",
+        "E08",
+        "E09",
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p340",
+          "label": "雑居ビル",
+          "range": [
+            340,
+            355
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p356",
+          "label": "カメラ構成",
+          "range": [
+            356,
+            368
+          ],
+          "evidence": [
+            "E07"
+          ],
+          "requires": [
+            "p340"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p369",
+          "label": "保存映像",
+          "range": [
+            369,
+            392
+          ],
+          "evidence": [],
+          "requires": [
+            "p356"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p393",
+          "label": "エレベーター運行ログ",
+          "range": [
+            393,
+            400
+          ],
+          "evidence": [
+            "E08"
+          ],
+          "requires": [
+            "p369"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p401",
+          "label": "事故前の映像",
+          "range": [
+            401,
+            404
+          ],
+          "evidence": [],
+          "requires": [
+            "p393"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p405",
+          "label": "事故後の映像",
+          "range": [
+            405,
+            421
+          ],
+          "evidence": [
+            "E09"
+          ],
+          "requires": [
+            "p401"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p422",
+          "label": "映像データ",
+          "range": [
+            422,
+            429
+          ],
+          "evidence": [
+            "E10"
+          ],
+          "requires": [
+            "p405"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p430",
+          "label": "5階カメラの管理",
+          "range": [
+            430,
+            448
+          ],
+          "evidence": [
+            "E11",
+            "E12"
+          ],
+          "requires": [
+            "p422"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "route": "翠",
+      "range": [
+        497,
+        698
+      ],
+      "required": [
+        "E13",
+        "E14",
+        "E15",
+        "E16",
+        "E17",
+        "E18",
+        "E19"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p517",
+          "label": "雑居ビル・5階",
+          "range": [
+            517,
+            521
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p522",
+          "label": "久保隆司",
+          "range": [
+            522,
+            554
+          ],
+          "evidence": [
+            "E13",
+            "E14"
+          ],
+          "requires": [
+            "p517"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p555",
+          "label": "久保について",
+          "range": [
+            555,
+            571
+          ],
+          "evidence": [
+            "E15"
+          ],
+          "requires": [
+            "p522"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p572",
+          "label": "野村亮",
+          "range": [
+            572,
+            604
+          ],
+          "evidence": [
+            "E16",
+            "E17"
+          ],
+          "requires": [
+            "p555"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p605",
+          "label": "石田美穂",
+          "range": [
+            605,
+            652
+          ],
+          "evidence": [],
+          "requires": [
+            "p572"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p653",
+          "label": "社内通知の確認",
+          "range": [
+            653,
+            660
+          ],
+          "evidence": [
+            "E18",
+            "E19"
+          ],
+          "requires": [
+            "p605"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p661",
+          "label": "翠の整理",
+          "range": [
+            661,
+            666
+          ],
+          "evidence": [],
+          "requires": [
+            "p517",
+            "p522",
+            "p555",
+            "p572",
+            "p605",
+            "p653"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "route": "紅→藍",
+      "range": [
+        699,
+        806
+      ],
+      "required": [
+        "E07",
+        "E08",
+        "E09",
+        "E10",
+        "E11",
+        "E12",
+        "E20",
+        "E21",
+        "E22",
+        "E23",
+        "E24",
+        "E25",
+        "E26"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p711",
+          "label": "雑居ビル",
+          "range": [
+            711,
+            715
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p716",
+          "label": "保存映像",
+          "range": [
+            716,
+            737
+          ],
+          "evidence": [
+            "E08",
+            "E09",
+            "E10",
+            "E07",
+            "E11",
+            "E12",
+            "E20"
+          ],
+          "requires": [
+            "p711"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p738",
+          "label": "非常扉センサー",
+          "range": [
+            738,
+            742
+          ],
+          "evidence": [
+            "E21"
+          ],
+          "requires": [
+            "p716"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p743",
+          "label": "5階入退室記録",
+          "range": [
+            743,
+            745
+          ],
+          "evidence": [
+            "E22"
+          ],
+          "requires": [
+            "p738"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p746",
+          "label": "久保へ確認",
+          "range": [
+            746,
+            761
+          ],
+          "evidence": [
+            "E23"
+          ],
+          "requires": [
+            "p743"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p762",
+          "label": "経理処理の控え",
+          "range": [
+            762,
+            769
+          ],
+          "evidence": [
+            "E24"
+          ],
+          "requires": [
+            "p746"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p770",
+          "label": "録画機の操作記録",
+          "range": [
+            770,
+            774
+          ],
+          "evidence": [
+            "E25"
+          ],
+          "requires": [
+            "p762"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p775",
+          "label": "藍の整理",
+          "range": [
+            775,
+            777
+          ],
+          "evidence": [
+            "E26"
+          ],
+          "requires": [
+            "p711",
+            "p716",
+            "p738",
+            "p743",
+            "p746",
+            "p762",
+            "p770"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "route": "紅→翠",
+      "range": [
+        807,
+        966
+      ],
+      "required": [
+        "E13",
+        "E14",
+        "E17",
+        "E18",
+        "E19",
+        "E27",
+        "E28",
+        "E29"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p818",
+          "label": "雑居ビル・5階",
+          "range": [
+            818,
+            820
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p821",
+          "label": "久保隆司",
+          "range": [
+            821,
+            855
+          ],
+          "evidence": [
+            "E13",
+            "E14",
+            "E27",
+            "E17"
+          ],
+          "requires": [
+            "p818"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p856",
+          "label": "野村亮",
+          "range": [
+            856,
+            884
+          ],
+          "evidence": [],
+          "requires": [
+            "p821"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p885",
+          "label": "石田美穂",
+          "range": [
+            885,
+            914
+          ],
+          "evidence": [
+            "E28"
+          ],
+          "requires": [
+            "p856"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p915",
+          "label": "社内通知の確認",
+          "range": [
+            915,
+            935
+          ],
+          "evidence": [
+            "E18",
+            "E19"
+          ],
+          "requires": [
+            "p885"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p936",
+          "label": "翠の整理",
+          "range": [
+            936,
+            940
+          ],
+          "evidence": [
+            "E29"
+          ],
+          "requires": [
+            "p818",
+            "p821",
+            "p856",
+            "p885",
+            "p915"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "route": "藍→紅",
+      "range": [
+        967,
+        1070
+      ],
+      "required": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E06",
+        "E22",
+        "E23",
+        "E30",
+        "E31"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p982",
+          "label": "雑居ビル",
+          "range": [
+            982,
+            985
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p986",
+          "label": "発見時記録",
+          "range": [
+            986,
+            988
+          ],
+          "evidence": [
+            "E01"
+          ],
+          "requires": [
+            "p982"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p989",
+          "label": "5F・非常階段",
+          "range": [
+            989,
+            992
+          ],
+          "evidence": [],
+          "requires": [
+            "p986"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p993",
+          "label": "外傷記録",
+          "range": [
+            993,
+            995
+          ],
+          "evidence": [
+            "E02"
+          ],
+          "requires": [
+            "p989"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p996",
+          "label": "発見地点",
+          "range": [
+            996,
+            1006
+          ],
+          "evidence": [
+            "E03",
+            "E04"
+          ],
+          "requires": [
+            "p993"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1007",
+          "label": "非常扉",
+          "range": [
+            1007,
+            1016
+          ],
+          "evidence": [
+            "E05"
+          ],
+          "requires": [
+            "p996"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1017",
+          "label": "5階・会社",
+          "range": [
+            1017,
+            1021
+          ],
+          "evidence": [],
+          "requires": [
+            "p996"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1022",
+          "label": "社員カード履歴",
+          "range": [
+            1022,
+            1024
+          ],
+          "evidence": [
+            "E22"
+          ],
+          "requires": [
+            "p1017"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1025",
+          "label": "圭介の旧保管資料",
+          "range": [
+            1025,
+            1036
+          ],
+          "evidence": [
+            "E30",
+            "E23"
+          ],
+          "requires": [
+            "p1022"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1037",
+          "label": "紅の再構成",
+          "range": [
+            1037,
+            1039
+          ],
+          "evidence": [
+            "E06",
+            "E31"
+          ],
+          "requires": [
+            "p982",
+            "p986",
+            "p989",
+            "p993",
+            "p996",
+            "p1007",
+            "p1017",
+            "p1022",
+            "p1025"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "route": "藍→翠",
+      "range": [
+        1071,
+        1240
+      ],
+      "required": [
+        "E13",
+        "E14",
+        "E18",
+        "E19",
+        "E27",
+        "E28",
+        "E32",
+        "E33",
+        "E34",
+        "E35",
+        "E36"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1085",
+          "label": "雑居ビル・5階",
+          "range": [
+            1085,
+            1089
+          ],
+          "evidence": [
+            "E32"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1090",
+          "label": "久保隆司",
+          "range": [
+            1090,
+            1110
+          ],
+          "evidence": [
+            "E13",
+            "E14",
+            "E27"
+          ],
+          "requires": [
+            "p1085"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1111",
+          "label": "野村亮",
+          "range": [
+            1111,
+            1126
+          ],
+          "evidence": [
+            "E33"
+          ],
+          "requires": [
+            "p1090"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1127",
+          "label": "石田美穂",
+          "range": [
+            1127,
+            1182
+          ],
+          "evidence": [
+            "E28",
+            "E34"
+          ],
+          "requires": [
+            "p1111"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1183",
+          "label": "社内通知",
+          "range": [
+            1183,
+            1210
+          ],
+          "evidence": [
+            "E18",
+            "E19",
+            "E35"
+          ],
+          "requires": [
+            "p1127"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1211",
+          "label": "翠の整理",
+          "range": [
+            1211,
+            1214
+          ],
+          "evidence": [
+            "E36"
+          ],
+          "requires": [
+            "p1085",
+            "p1090",
+            "p1111",
+            "p1127",
+            "p1183"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "route": "翠→紅",
+      "range": [
+        1241,
+        1321
+      ],
+      "required": [
+        "E02",
+        "E03",
+        "E04",
+        "E06",
+        "E22",
+        "E37",
+        "E38",
+        "E39",
+        "E40"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1250",
+          "label": "雑居ビル・5階",
+          "range": [
+            1250,
+            1251
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1252",
+          "label": "社員カード履歴",
+          "range": [
+            1252,
+            1256
+          ],
+          "evidence": [
+            "E22"
+          ],
+          "requires": [
+            "p1250"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1257",
+          "label": "非常階段",
+          "range": [
+            1257,
+            1258
+          ],
+          "evidence": [],
+          "requires": [
+            "p1252"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1259",
+          "label": "発見位置",
+          "range": [
+            1259,
+            1263
+          ],
+          "evidence": [
+            "E03"
+          ],
+          "requires": [
+            "p1257"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1264",
+          "label": "外傷記録",
+          "range": [
+            1264,
+            1266
+          ],
+          "evidence": [
+            "E02"
+          ],
+          "requires": [
+            "p1259"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1267",
+          "label": "階段上の記録",
+          "range": [
+            1267,
+            1269
+          ],
+          "evidence": [
+            "E04",
+            "E06"
+          ],
+          "requires": [
+            "p1264"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1270",
+          "label": "事故資料・救急記録",
+          "range": [
+            1270,
+            1275
+          ],
+          "evidence": [
+            "E37"
+          ],
+          "requires": [
+            "p1267"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1276",
+          "label": "第一発見者の記録",
+          "range": [
+            1276,
+            1280
+          ],
+          "evidence": [
+            "E38"
+          ],
+          "requires": [
+            "p1270"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1281",
+          "label": "5階・社内",
+          "range": [
+            1281,
+            1287
+          ],
+          "evidence": [
+            "E39"
+          ],
+          "requires": [
+            "p1276"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1288",
+          "label": "紅の整理",
+          "range": [
+            1288,
+            1292
+          ],
+          "evidence": [
+            "E40"
+          ],
+          "requires": [
+            "p1250",
+            "p1252",
+            "p1257",
+            "p1259",
+            "p1264",
+            "p1267",
+            "p1270",
+            "p1276",
+            "p1281"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "route": "翠→藍",
+      "range": [
+        1322,
+        1406
+      ],
+      "required": [
+        "E08",
+        "E09",
+        "E21",
+        "E23",
+        "E25",
+        "E30",
+        "E41",
+        "E42",
+        "E43",
+        "E44"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1331",
+          "label": "雑居ビル・管理室",
+          "range": [
+            1331,
+            1335
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1336",
+          "label": "社員カード履歴",
+          "range": [
+            1336,
+            1339
+          ],
+          "evidence": [
+            "E41"
+          ],
+          "requires": [
+            "p1331"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1340",
+          "label": "5階カメラ",
+          "range": [
+            1340,
+            1346
+          ],
+          "evidence": [
+            "E08",
+            "E09"
+          ],
+          "requires": [
+            "p1336"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1347",
+          "label": "石田の映像",
+          "range": [
+            1347,
+            1355
+          ],
+          "evidence": [
+            "E42"
+          ],
+          "requires": [
+            "p1340"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1356",
+          "label": "非常扉ログ",
+          "range": [
+            1356,
+            1360
+          ],
+          "evidence": [
+            "E21"
+          ],
+          "requires": [
+            "p1347"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1361",
+          "label": "カメラ時刻の操作",
+          "range": [
+            1361,
+            1369
+          ],
+          "evidence": [
+            "E25",
+            "E43"
+          ],
+          "requires": [
+            "p1356"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1370",
+          "label": "圭介の記録",
+          "range": [
+            1370,
+            1377
+          ],
+          "evidence": [
+            "E30",
+            "E23"
+          ],
+          "requires": [
+            "p1361"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1378",
+          "label": "藍の整理",
+          "range": [
+            1378,
+            1380
+          ],
+          "evidence": [
+            "E44"
+          ],
+          "requires": [
+            "p1331",
+            "p1336",
+            "p1340",
+            "p1347",
+            "p1356",
+            "p1361",
+            "p1370"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "route": "紅",
+      "range": [
+        109,
+        247
+      ],
+      "required": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E06",
+        "E07",
+        "E08"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p127",
+          "label": "行きつけの居酒屋",
+          "range": [
+            127,
+            146
+          ],
+          "evidence": [
+            "E01"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p147",
+          "label": "居酒屋の防犯映像",
+          "range": [
+            147,
+            157
+          ],
+          "evidence": [
+            "E02"
+          ],
+          "requires": [
+            "p127"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p158",
+          "label": "旧住所・マンション",
+          "range": [
+            158,
+            168
+          ],
+          "evidence": [
+            "E03"
+          ],
+          "requires": [
+            "p147"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p169",
+          "label": "近隣コンビニ",
+          "range": [
+            169,
+            176
+          ],
+          "evidence": [
+            "E04"
+          ],
+          "requires": [
+            "p158"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p177",
+          "label": "タクシー会社",
+          "range": [
+            177,
+            182
+          ],
+          "evidence": [
+            "E05"
+          ],
+          "requires": [
+            "p169"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p183",
+          "label": "駅周辺",
+          "range": [
+            183,
+            186
+          ],
+          "evidence": [],
+          "requires": [
+            "p169"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p187",
+          "label": "最後に会った日の映像",
+          "range": [
+            187,
+            199
+          ],
+          "evidence": [
+            "E06"
+          ],
+          "requires": [
+            "p183"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p200",
+          "label": "紅の整理",
+          "range": [
+            200,
+            206
+          ],
+          "evidence": [
+            "E07",
+            "E08"
+          ],
+          "requires": [
+            "p127",
+            "p147",
+            "p158",
+            "p169",
+            "p183",
+            "p187"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "route": "藍",
+      "range": [
+        248,
+        380
+      ],
+      "required": [
+        "E09",
+        "E10",
+        "E11",
+        "E13",
+        "E14",
+        "E12",
+        "E15",
+        "E17",
+        "E18"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p260",
+          "label": "三浦の自宅",
+          "range": [
+            260,
+            263
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p264",
+          "label": "写真ライブラリ",
+          "range": [
+            264,
+            277
+          ],
+          "evidence": [
+            "E09",
+            "E10"
+          ],
+          "requires": [
+            "p260"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p278",
+          "label": "橘の「勤務先」",
+          "range": [
+            278,
+            290
+          ],
+          "evidence": [
+            "E11"
+          ],
+          "requires": [
+            "p264"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p291",
+          "label": "旧事務所",
+          "range": [
+            291,
+            292
+          ],
+          "evidence": [],
+          "requires": [
+            "p278"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p293",
+          "label": "棚",
+          "range": [
+            293,
+            299
+          ],
+          "evidence": [
+            "E13"
+          ],
+          "requires": [
+            "p291"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p300",
+          "label": "壁際",
+          "range": [
+            300,
+            304
+          ],
+          "evidence": [
+            "E14"
+          ],
+          "requires": [
+            "p293"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p305",
+          "label": "出入口",
+          "range": [
+            305,
+            308
+          ],
+          "evidence": [
+            "E12"
+          ],
+          "requires": [
+            "p300"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p309",
+          "label": "旧住所周辺",
+          "range": [
+            309,
+            321
+          ],
+          "evidence": [
+            "E15"
+          ],
+          "requires": [
+            "p305"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p322",
+          "label": "街中",
+          "range": [
+            322,
+            322
+          ],
+          "evidence": [],
+          "requires": [
+            "p309"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p323",
+          "label": "周囲を確かめる",
+          "range": [
+            323,
+            329
+          ],
+          "evidence": [
+            "E16"
+          ],
+          "requires": [
+            "p322"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p330",
+          "label": "駅前広場",
+          "range": [
+            330,
+            336
+          ],
+          "evidence": [
+            "E17"
+          ],
+          "requires": [
+            "p322"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p337",
+          "label": "喫茶店",
+          "range": [
+            337,
+            343
+          ],
+          "evidence": [
+            "E18"
+          ],
+          "requires": [
+            "p330"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "route": "翠",
+      "range": [
+        381,
+        508
+      ],
+      "required": [
+        "E19",
+        "E20",
+        "E21",
+        "E22",
+        "E23",
+        "E24",
+        "E25",
+        "E26"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p394",
+          "label": "三浦の自宅",
+          "range": [
+            394,
+            413
+          ],
+          "evidence": [
+            "E19"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p414",
+          "label": "行きつけの居酒屋",
+          "range": [
+            414,
+            427
+          ],
+          "evidence": [
+            "E20"
+          ],
+          "requires": [
+            "p394"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p428",
+          "label": "旧住所・マンション",
+          "range": [
+            428,
+            449
+          ],
+          "evidence": [
+            "E21"
+          ],
+          "requires": [
+            "p414"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p450",
+          "label": "元交際相手",
+          "range": [
+            450,
+            469
+          ],
+          "evidence": [
+            "E22"
+          ],
+          "requires": [
+            "p428"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p470",
+          "label": "人物像の比較",
+          "range": [
+            470,
+            478
+          ],
+          "evidence": [
+            "E23",
+            "E24",
+            "E25",
+            "E26"
+          ],
+          "requires": [
+            "p394",
+            "p414",
+            "p428",
+            "p450"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "route": "紅→藍",
+      "range": [
+        509,
+        632
+      ],
+      "required": [
+        "E27",
+        "E28",
+        "E09",
+        "E29",
+        "E30",
+        "E31",
+        "E32",
+        "E33",
+        "E34",
+        "E35",
+        "E36"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p521",
+          "label": "最後に会った店",
+          "range": [
+            521,
+            532
+          ],
+          "evidence": [
+            "E27",
+            "E28"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p533",
+          "label": "三浦の自宅",
+          "range": [
+            533,
+            547
+          ],
+          "evidence": [
+            "E09",
+            "E29",
+            "E30"
+          ],
+          "requires": [
+            "p521"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p548",
+          "label": "最後に会った夜",
+          "range": [
+            548,
+            561
+          ],
+          "evidence": [
+            "E31"
+          ],
+          "requires": [
+            "p533"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p562",
+          "label": "本棚",
+          "range": [
+            562,
+            582
+          ],
+          "evidence": [
+            "E32"
+          ],
+          "requires": [
+            "p548"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p583",
+          "label": "記録媒体",
+          "range": [
+            583,
+            595
+          ],
+          "evidence": [
+            "E33",
+            "E34"
+          ],
+          "requires": [
+            "p562"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p596",
+          "label": "残された記録",
+          "range": [
+            596,
+            606
+          ],
+          "evidence": [
+            "E35"
+          ],
+          "requires": [
+            "p583"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p607",
+          "label": "藍の整理",
+          "range": [
+            607,
+            609
+          ],
+          "evidence": [
+            "E36"
+          ],
+          "requires": [
+            "p521",
+            "p533",
+            "p548",
+            "p562",
+            "p583",
+            "p596"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "route": "紅→翠",
+      "range": [
+        633,
+        782
+      ],
+      "required": [
+        "E19",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E20",
+        "E21",
+        "E22",
+        "E41",
+        "E23",
+        "E24",
+        "E42",
+        "E43",
+        "E32",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E48",
+        "E49"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p644",
+          "label": "三浦の自宅",
+          "range": [
+            644,
+            669
+          ],
+          "evidence": [
+            "E19",
+            "E37",
+            "E38",
+            "E39"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p670",
+          "label": "行きつけの居酒屋",
+          "range": [
+            670,
+            679
+          ],
+          "evidence": [
+            "E40",
+            "E20"
+          ],
+          "requires": [
+            "p644"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p680",
+          "label": "旧住所・マンション",
+          "range": [
+            680,
+            684
+          ],
+          "evidence": [
+            "E21"
+          ],
+          "requires": [
+            "p670"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p685",
+          "label": "元交際相手",
+          "range": [
+            685,
+            703
+          ],
+          "evidence": [
+            "E22",
+            "E41"
+          ],
+          "requires": [
+            "p680"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p704",
+          "label": "翠の整理",
+          "range": [
+            704,
+            708
+          ],
+          "evidence": [
+            "E23",
+            "E24",
+            "E42"
+          ],
+          "requires": [
+            "p644",
+            "p670",
+            "p680",
+            "p685"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p709",
+          "label": "三浦の自宅・再確認",
+          "range": [
+            709,
+            715
+          ],
+          "evidence": [
+            "E43"
+          ],
+          "requires": [
+            "p704"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p716",
+          "label": "本棚",
+          "range": [
+            716,
+            731
+          ],
+          "evidence": [
+            "E32"
+          ],
+          "requires": [
+            "p709"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p732",
+          "label": "記録媒体",
+          "range": [
+            732,
+            755
+          ],
+          "evidence": [
+            "E44",
+            "E45",
+            "E46",
+            "E47",
+            "E48"
+          ],
+          "requires": [
+            "p716"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p756",
+          "label": "翠の整理",
+          "range": [
+            756,
+            759
+          ],
+          "evidence": [
+            "E49"
+          ],
+          "requires": [
+            "p644",
+            "p670",
+            "p680",
+            "p685",
+            "p704",
+            "p709",
+            "p716",
+            "p732"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "route": "藍→紅",
+      "range": [
+        783,
+        886
+      ],
+      "required": [
+        "E50",
+        "E51",
+        "E40",
+        "E52",
+        "E43",
+        "E53",
+        "E54",
+        "E32"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p797",
+          "label": "偽装されていた勤務先",
+          "range": [
+            797,
+            810
+          ],
+          "evidence": [
+            "E50",
+            "E51",
+            "E40"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p811",
+          "label": "旧住所・マンション",
+          "range": [
+            811,
+            818
+          ],
+          "evidence": [
+            "E52"
+          ],
+          "requires": [
+            "p797"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p819",
+          "label": "三浦の自宅",
+          "range": [
+            819,
+            827
+          ],
+          "evidence": [
+            "E43"
+          ],
+          "requires": [
+            "p811"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p828",
+          "label": "マンション共用部の映像",
+          "range": [
+            828,
+            833
+          ],
+          "evidence": [
+            "E53",
+            "E54"
+          ],
+          "requires": [
+            "p819"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p834",
+          "label": "三浦の自宅・室内",
+          "range": [
+            834,
+            840
+          ],
+          "evidence": [],
+          "requires": [
+            "p828"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p841",
+          "label": "本棚",
+          "range": [
+            841,
+            857
+          ],
+          "evidence": [
+            "E32"
+          ],
+          "requires": [
+            "p834"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "route": "藍→翠",
+      "range": [
+        887,
+        1029
+      ],
+      "required": [
+        "E19",
+        "E20",
+        "E40",
+        "E21",
+        "E22",
+        "E41",
+        "E23",
+        "E56",
+        "E57",
+        "E58",
+        "E38",
+        "E59",
+        "E43",
+        "E32",
+        "E44",
+        "E45",
+        "E47",
+        "E48",
+        "E60"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p900",
+          "label": "三浦の自宅",
+          "range": [
+            900,
+            910
+          ],
+          "evidence": [
+            "E19"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p911",
+          "label": "行きつけの居酒屋",
+          "range": [
+            911,
+            922
+          ],
+          "evidence": [
+            "E20",
+            "E40"
+          ],
+          "requires": [
+            "p900"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p923",
+          "label": "旧住所・マンション",
+          "range": [
+            923,
+            930
+          ],
+          "evidence": [
+            "E21"
+          ],
+          "requires": [
+            "p911"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p931",
+          "label": "元交際相手",
+          "range": [
+            931,
+            945
+          ],
+          "evidence": [
+            "E22",
+            "E41"
+          ],
+          "requires": [
+            "p923"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p946",
+          "label": "四人の証言",
+          "range": [
+            946,
+            952
+          ],
+          "evidence": [
+            "E23",
+            "E56",
+            "E57",
+            "E58"
+          ],
+          "requires": [
+            "p931"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p953",
+          "label": "三浦の自宅・再訪",
+          "range": [
+            953,
+            960
+          ],
+          "evidence": [
+            "E38",
+            "E59"
+          ],
+          "requires": [
+            "p946"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p961",
+          "label": "最後に会った夜",
+          "range": [
+            961,
+            967
+          ],
+          "evidence": [
+            "E43"
+          ],
+          "requires": [
+            "p953"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p968",
+          "label": "本棚",
+          "range": [
+            968,
+            979
+          ],
+          "evidence": [
+            "E32"
+          ],
+          "requires": [
+            "p961"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p980",
+          "label": "記録媒体",
+          "range": [
+            980,
+            989
+          ],
+          "evidence": [
+            "E44",
+            "E45",
+            "E47"
+          ],
+          "requires": [
+            "p968"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p990",
+          "label": "写真が消えた理由",
+          "range": [
+            990,
+            1000
+          ],
+          "evidence": [
+            "E48"
+          ],
+          "requires": [
+            "p980"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1001",
+          "label": "翠の整理",
+          "range": [
+            1001,
+            1004
+          ],
+          "evidence": [
+            "E60"
+          ],
+          "requires": [
+            "p900",
+            "p911",
+            "p923",
+            "p931",
+            "p946",
+            "p953",
+            "p961",
+            "p968",
+            "p980",
+            "p990"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "route": "翠→紅",
+      "range": [
+        1030,
+        1148
+      ],
+      "required": [
+        "E61",
+        "E62",
+        "E50",
+        "E51",
+        "E52",
+        "E40",
+        "E43",
+        "E53",
+        "E54",
+        "E63",
+        "E32"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1042",
+          "label": "行きつけの居酒屋",
+          "range": [
+            1042,
+            1051
+          ],
+          "evidence": [
+            "E61"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1052",
+          "label": "旧住所・マンション",
+          "range": [
+            1052,
+            1055
+          ],
+          "evidence": [],
+          "requires": [
+            "p1042"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1056",
+          "label": "元交際相手",
+          "range": [
+            1056,
+            1060
+          ],
+          "evidence": [],
+          "requires": [
+            "p1052"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1061",
+          "label": "三浦の自宅",
+          "range": [
+            1061,
+            1068
+          ],
+          "evidence": [
+            "E62"
+          ],
+          "requires": [
+            "p1056"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1069",
+          "label": "偽装されていた勤務先",
+          "range": [
+            1069,
+            1080
+          ],
+          "evidence": [
+            "E50",
+            "E51"
+          ],
+          "requires": [
+            "p1061"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1081",
+          "label": "旧住所への電話確認",
+          "range": [
+            1081,
+            1084
+          ],
+          "evidence": [
+            "E52"
+          ],
+          "requires": [
+            "p1069"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1085",
+          "label": "居酒屋への電話確認",
+          "range": [
+            1085,
+            1088
+          ],
+          "evidence": [
+            "E40"
+          ],
+          "requires": [
+            "p1081"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1089",
+          "label": "三浦の自宅",
+          "range": [
+            1089,
+            1095
+          ],
+          "evidence": [
+            "E43"
+          ],
+          "requires": [
+            "p1085"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1096",
+          "label": "マンション共用部",
+          "range": [
+            1096,
+            1103
+          ],
+          "evidence": [
+            "E53",
+            "E54",
+            "E63"
+          ],
+          "requires": [
+            "p1089"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1104",
+          "label": "三浦の自宅・最後の確認",
+          "range": [
+            1104,
+            1107
+          ],
+          "evidence": [],
+          "requires": [
+            "p1096"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1108",
+          "label": "本棚",
+          "range": [
+            1108,
+            1122
+          ],
+          "evidence": [
+            "E32"
+          ],
+          "requires": [
+            "p1104"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "route": "翠→藍",
+      "range": [
+        1149,
+        1280
+      ],
+      "required": [
+        "E11",
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E17",
+        "E64",
+        "E09",
+        "E10",
+        "E31",
+        "E32",
+        "E33",
+        "E34",
+        "E65",
+        "E49",
+        "E35",
+        "E66"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p1164",
+          "label": "橘の「勤務先」",
+          "range": [
+            1164,
+            1172
+          ],
+          "evidence": [
+            "E11"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p1173",
+          "label": "旧事務所",
+          "range": [
+            1173,
+            1185
+          ],
+          "evidence": [
+            "E12",
+            "E13",
+            "E14"
+          ],
+          "requires": [
+            "p1164"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1186",
+          "label": "旧住所・マンション",
+          "range": [
+            1186,
+            1189
+          ],
+          "evidence": [
+            "E15"
+          ],
+          "requires": [
+            "p1173"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1190",
+          "label": "駅前広場",
+          "range": [
+            1190,
+            1195
+          ],
+          "evidence": [
+            "E17"
+          ],
+          "requires": [
+            "p1186"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1196",
+          "label": "藍の整理",
+          "range": [
+            1196,
+            1199
+          ],
+          "evidence": [
+            "E64"
+          ],
+          "requires": [
+            "p1164",
+            "p1173",
+            "p1186",
+            "p1190"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1200",
+          "label": "三浦の自宅",
+          "range": [
+            1200,
+            1211
+          ],
+          "evidence": [
+            "E09",
+            "E10",
+            "E31"
+          ],
+          "requires": [
+            "p1196"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1212",
+          "label": "最後の夜",
+          "range": [
+            1212,
+            1228
+          ],
+          "evidence": [
+            "E32"
+          ],
+          "requires": [
+            "p1200"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1229",
+          "label": "記録媒体",
+          "range": [
+            1229,
+            1239
+          ],
+          "evidence": [
+            "E33",
+            "E34"
+          ],
+          "requires": [
+            "p1212"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1240",
+          "label": "橘が消えた理由",
+          "range": [
+            1240,
+            1253
+          ],
+          "evidence": [
+            "E65",
+            "E49",
+            "E35"
+          ],
+          "requires": [
+            "p1229"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p1254",
+          "label": "藍の整理",
+          "range": [
+            1254,
+            1258
+          ],
+          "evidence": [
+            "E66"
+          ],
+          "requires": [
+            "p1164",
+            "p1173",
+            "p1186",
+            "p1190",
+            "p1196",
+            "p1200",
+            "p1212",
+            "p1229",
+            "p1240"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "route": "紅",
+      "range": [
+        50,
+        125
+      ],
+      "required": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E08"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p58",
+          "label": "異業種交流会・会場",
+          "range": [
+            58,
+            65
+          ],
+          "evidence": [
+            "E01"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p66",
+          "label": "ホテルラウンジ",
+          "range": [
+            66,
+            72
+          ],
+          "evidence": [
+            "E02"
+          ],
+          "requires": [
+            "p58"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p73",
+          "label": "「会社の打ち合わせ室」",
+          "range": [
+            73,
+            79
+          ],
+          "evidence": [
+            "E03"
+          ],
+          "requires": [
+            "p66"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p80",
+          "label": "会議室で見せられた商品",
+          "range": [
+            80,
+            88
+          ],
+          "evidence": [
+            "E04"
+          ],
+          "requires": [
+            "p73"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p89",
+          "label": "新店舗予定地",
+          "range": [
+            89,
+            95
+          ],
+          "evidence": [
+            "E05"
+          ],
+          "requires": [
+            "p80"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p96",
+          "label": "二人が会った場所",
+          "range": [
+            96,
+            99
+          ],
+          "evidence": [
+            "E06"
+          ],
+          "requires": [
+            "p89"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p100",
+          "label": "二人がよく会ったレストラン",
+          "range": [
+            100,
+            105
+          ],
+          "evidence": [
+            "E07"
+          ],
+          "requires": [
+            "p96"
+          ],
+          "optional": true
+        },
+        {
+          "key": "p106",
+          "label": "紅の整理",
+          "range": [
+            106,
+            110
+          ],
+          "evidence": [
+            "E08"
+          ],
+          "requires": [
+            "p58",
+            "p66",
+            "p73",
+            "p80",
+            "p89",
+            "p96"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "route": "藍",
+      "range": [
+        126,
+        211
+      ],
+      "required": [
+        "E09",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16",
+        "E17"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p133",
+          "label": "佳奈との面会",
+          "range": [
+            133,
+            142
+          ],
+          "evidence": [
+            "E09"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p143",
+          "label": "会社のWebサイト",
+          "range": [
+            143,
+            160
+          ],
+          "evidence": [
+            "E10",
+            "E11"
+          ],
+          "requires": [
+            "p133"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p161",
+          "label": "名刺の住所",
+          "range": [
+            161,
+            166
+          ],
+          "evidence": [
+            "E12"
+          ],
+          "requires": [
+            "p143"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p167",
+          "label": "振込記録",
+          "range": [
+            167,
+            176
+          ],
+          "evidence": [
+            "E13"
+          ],
+          "requires": [
+            "p161"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p177",
+          "label": "二人が会ったレストラン",
+          "range": [
+            177,
+            182
+          ],
+          "evidence": [
+            "E14"
+          ],
+          "requires": [
+            "p167"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p183",
+          "label": "佳奈が保存した写真",
+          "range": [
+            183,
+            187
+          ],
+          "evidence": [
+            "E15"
+          ],
+          "requires": [
+            "p177"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p188",
+          "label": "藍の整理",
+          "range": [
+            188,
+            195
+          ],
+          "evidence": [
+            "E16",
+            "E17"
+          ],
+          "requires": [
+            "p133",
+            "p143",
+            "p161",
+            "p167",
+            "p177",
+            "p183"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "route": "翠",
+      "range": [
+        212,
+        304
+      ],
+      "required": [
+        "E18",
+        "E19",
+        "E20",
+        "E21",
+        "E22",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27",
+        "E28"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p219",
+          "label": "喫茶店 ―― 佳奈と翠",
+          "range": [
+            219,
+            244
+          ],
+          "evidence": [
+            "E18",
+            "E19",
+            "E20",
+            "E21"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p245",
+          "label": "佳奈の返事",
+          "range": [
+            245,
+            257
+          ],
+          "evidence": [
+            "E22",
+            "E23"
+          ],
+          "requires": [
+            "p219"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p258",
+          "label": "初めて金の話が出た日",
+          "range": [
+            258,
+            289
+          ],
+          "evidence": [
+            "E24",
+            "E25",
+            "E26",
+            "E27",
+            "E28"
+          ],
+          "requires": [
+            "p245"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "route": "紅→藍",
+      "range": [
+        305,
+        393
+      ],
+      "required": [
+        "E29",
+        "E30",
+        "E31",
+        "E32",
+        "E10",
+        "E11",
+        "E24",
+        "E33",
+        "E34",
+        "E35"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p315",
+          "label": "貸会議室",
+          "range": [
+            315,
+            321
+          ],
+          "evidence": [
+            "E29"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p322",
+          "label": "予約した日",
+          "range": [
+            322,
+            329
+          ],
+          "evidence": [
+            "E30"
+          ],
+          "requires": [
+            "p315"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p330",
+          "label": "ホテルラウンジ",
+          "range": [
+            330,
+            336
+          ],
+          "evidence": [
+            "E31"
+          ],
+          "requires": [
+            "p322"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p337",
+          "label": "レストラン",
+          "range": [
+            337,
+            346
+          ],
+          "evidence": [
+            "E32"
+          ],
+          "requires": [
+            "p330"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p347",
+          "label": "別の女性について",
+          "range": [
+            347,
+            350
+          ],
+          "evidence": [],
+          "requires": [
+            "p337"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p351",
+          "label": "保存された会社サイト",
+          "range": [
+            351,
+            361
+          ],
+          "evidence": [
+            "E10",
+            "E11"
+          ],
+          "requires": [
+            "p347"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p362",
+          "label": "貸付と連絡が途絶えた時期",
+          "range": [
+            362,
+            370
+          ],
+          "evidence": [
+            "E24",
+            "E33"
+          ],
+          "requires": [
+            "p351"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p371",
+          "label": "藍の整理",
+          "range": [
+            371,
+            377
+          ],
+          "evidence": [
+            "E34",
+            "E35"
+          ],
+          "requires": [
+            "p315",
+            "p322",
+            "p330",
+            "p337",
+            "p347",
+            "p351",
+            "p362"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "route": "紅→翠",
+      "range": [
+        394,
+        501
+      ],
+      "required": [
+        "E36",
+        "E37",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E38",
+        "E43",
+        "E44",
+        "E45"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p405",
+          "label": "レストラン",
+          "range": [
+            405,
+            413
+          ],
+          "evidence": [
+            "E07"
+          ],
+          "requires": [],
+          "optional": true
+        },
+        {
+          "key": "p414",
+          "label": "連絡メモへの返事",
+          "range": [
+            414,
+            419
+          ],
+          "evidence": [
+            "E36"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p420",
+          "label": "喫茶店 ―― 真紀と翠",
+          "range": [
+            420,
+            427
+          ],
+          "evidence": [
+            "E37"
+          ],
+          "requires": [
+            "p414"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p428",
+          "label": "真紀への頼み事",
+          "range": [
+            428,
+            436
+          ],
+          "evidence": [],
+          "requires": [
+            "p420"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p437",
+          "label": "連絡が減った理由",
+          "range": [
+            437,
+            448
+          ],
+          "evidence": [
+            "E39",
+            "E40"
+          ],
+          "requires": [
+            "p428"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p449",
+          "label": "同じ店舗候補",
+          "range": [
+            449,
+            458
+          ],
+          "evidence": [
+            "E41",
+            "E42"
+          ],
+          "requires": [
+            "p437"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p459",
+          "label": "佳奈への再確認",
+          "range": [
+            459,
+            474
+          ],
+          "evidence": [
+            "E38",
+            "E43"
+          ],
+          "requires": [
+            "p449"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p475",
+          "label": "翠の整理",
+          "range": [
+            475,
+            481
+          ],
+          "evidence": [
+            "E44",
+            "E45"
+          ],
+          "requires": [
+            "p414",
+            "p420",
+            "p428",
+            "p437",
+            "p449",
+            "p459"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "route": "藍→紅",
+      "range": [
+        502,
+        602
+      ],
+      "required": [
+        "E46",
+        "E47",
+        "E48",
+        "E49",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p513",
+          "label": "喫茶店 ―― 佳奈への確認",
+          "range": [
+            513,
+            520
+          ],
+          "evidence": [
+            "E46"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p521",
+          "label": "持ち込んだ資料と商品",
+          "range": [
+            521,
+            529
+          ],
+          "evidence": [
+            "E47"
+          ],
+          "requires": [
+            "p513"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p530",
+          "label": "黒いケース",
+          "range": [
+            530,
+            538
+          ],
+          "evidence": [
+            "E48"
+          ],
+          "requires": [
+            "p521"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p539",
+          "label": "ホテルラウンジ",
+          "range": [
+            539,
+            544
+          ],
+          "evidence": [
+            "E49"
+          ],
+          "requires": [
+            "p530"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p545",
+          "label": "商品が届く先",
+          "range": [
+            545,
+            553
+          ],
+          "evidence": [
+            "E50"
+          ],
+          "requires": [
+            "p539"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p554",
+          "label": "新店舗予定地",
+          "range": [
+            554,
+            561
+          ],
+          "evidence": [
+            "E51"
+          ],
+          "requires": [
+            "p545"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p562",
+          "label": "会社の仕事場",
+          "range": [
+            562,
+            572
+          ],
+          "evidence": [
+            "E52",
+            "E53"
+          ],
+          "requires": [
+            "p554"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p573",
+          "label": "紅の整理",
+          "range": [
+            573,
+            579
+          ],
+          "evidence": [
+            "E54"
+          ],
+          "requires": [
+            "p513",
+            "p521",
+            "p530",
+            "p539",
+            "p545",
+            "p554",
+            "p562"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "route": "藍→翠",
+      "range": [
+        603,
+        714
+      ],
+      "required": [
+        "E55",
+        "E56",
+        "E57",
+        "E58",
+        "E59",
+        "E18",
+        "E19",
+        "E20",
+        "E21",
+        "E22",
+        "E23",
+        "E24",
+        "E25",
+        "E27",
+        "E60",
+        "E61",
+        "E62",
+        "E63"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p613",
+          "label": "喫茶店 ―― 佳奈と翠",
+          "range": [
+            613,
+            617
+          ],
+          "evidence": [],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p618",
+          "label": "先に送られたサイト",
+          "range": [
+            618,
+            623
+          ],
+          "evidence": [
+            "E55"
+          ],
+          "requires": [
+            "p613"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p624",
+          "label": "控えめな会社の説明",
+          "range": [
+            624,
+            630
+          ],
+          "evidence": [
+            "E56"
+          ],
+          "requires": [
+            "p618"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p631",
+          "label": "先に説明された番号変更",
+          "range": [
+            631,
+            635
+          ],
+          "evidence": [
+            "E57"
+          ],
+          "requires": [
+            "p624"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p636",
+          "label": "「会社の打ち合わせ室」",
+          "range": [
+            636,
+            644
+          ],
+          "evidence": [
+            "E58"
+          ],
+          "requires": [
+            "p631"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p645",
+          "label": "口座と税理士の話",
+          "range": [
+            645,
+            652
+          ],
+          "evidence": [
+            "E59"
+          ],
+          "requires": [
+            "p636"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p653",
+          "label": "小さな頼み事と返礼",
+          "range": [
+            653,
+            665
+          ],
+          "evidence": [
+            "E18",
+            "E19",
+            "E20",
+            "E21",
+            "E22",
+            "E23"
+          ],
+          "requires": [
+            "p645"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p666",
+          "label": "金の話が出た日",
+          "range": [
+            666,
+            677
+          ],
+          "evidence": [
+            "E24",
+            "E25",
+            "E27",
+            "E60"
+          ],
+          "requires": [
+            "p653"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p678",
+          "label": "黒川が用意した借用書",
+          "range": [
+            678,
+            685
+          ],
+          "evidence": [
+            "E61"
+          ],
+          "requires": [
+            "p666"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p686",
+          "label": "翠の整理",
+          "range": [
+            686,
+            692
+          ],
+          "evidence": [
+            "E62",
+            "E63"
+          ],
+          "requires": [
+            "p613",
+            "p618",
+            "p624",
+            "p631",
+            "p636",
+            "p645",
+            "p653",
+            "p666",
+            "p678"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "route": "翠→紅",
+      "range": [
+        715,
+        807
+      ],
+      "required": [
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E68",
+        "E51",
+        "E69",
+        "E70",
+        "E13",
+        "E71",
+        "E72"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p725",
+          "label": "喫茶店 ―― 荷物の写真",
+          "range": [
+            725,
+            733
+          ],
+          "evidence": [
+            "E64"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p734",
+          "label": "サンプルの発送元",
+          "range": [
+            734,
+            744
+          ],
+          "evidence": [
+            "E65",
+            "E66"
+          ],
+          "requires": [
+            "p725"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p745",
+          "label": "レストランの予約",
+          "range": [
+            745,
+            753
+          ],
+          "evidence": [
+            "E67",
+            "E68"
+          ],
+          "requires": [
+            "p734"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p754",
+          "label": "新店舗予定地",
+          "range": [
+            754,
+            759
+          ],
+          "evidence": [
+            "E51"
+          ],
+          "requires": [
+            "p745"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p760",
+          "label": "五百万の根拠",
+          "range": [
+            760,
+            768
+          ],
+          "evidence": [
+            "E69"
+          ],
+          "requires": [
+            "p754"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p769",
+          "label": "借用書と振込控え",
+          "range": [
+            769,
+            776
+          ],
+          "evidence": [
+            "E70",
+            "E13"
+          ],
+          "requires": [
+            "p760"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p777",
+          "label": "紅の整理",
+          "range": [
+            777,
+            783
+          ],
+          "evidence": [
+            "E71",
+            "E72"
+          ],
+          "requires": [
+            "p725",
+            "p734",
+            "p745",
+            "p754",
+            "p760",
+            "p769"
+          ],
+          "optional": false
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "route": "翠→藍",
+      "range": [
+        808,
+        904
+      ],
+      "required": [
+        "E73",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E81",
+        "E82",
+        "E83",
+        "E84"
+      ],
+      "introAwards": [],
+      "points": [
+        {
+          "key": "p818",
+          "label": "保存された会社サイト",
+          "range": [
+            818,
+            824
+          ],
+          "evidence": [
+            "E73"
+          ],
+          "requires": [],
+          "optional": false
+        },
+        {
+          "key": "p825",
+          "label": "会社のロゴ",
+          "range": [
+            825,
+            829
+          ],
+          "evidence": [
+            "E74"
+          ],
+          "requires": [
+            "p818"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p830",
+          "label": "会社案内の元ファイル",
+          "range": [
+            830,
+            838
+          ],
+          "evidence": [
+            "E75",
+            "E76"
+          ],
+          "requires": [
+            "p825"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p839",
+          "label": "名刺と会社メール",
+          "range": [
+            839,
+            848
+          ],
+          "evidence": [
+            "E77",
+            "E78"
+          ],
+          "requires": [
+            "p830"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p849",
+          "label": "二つの電話番号",
+          "range": [
+            849,
+            855
+          ],
+          "evidence": [
+            "E79"
+          ],
+          "requires": [
+            "p839"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p856",
+          "label": "名刺の住所",
+          "range": [
+            856,
+            861
+          ],
+          "evidence": [
+            "E80"
+          ],
+          "requires": [
+            "p849"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p862",
+          "label": "振込先",
+          "range": [
+            862,
+            869
+          ],
+          "evidence": [
+            "E81"
+          ],
+          "requires": [
+            "p856"
+          ],
+          "optional": false
+        },
+        {
+          "key": "p870",
+          "label": "佳奈との関係",
+          "range": [
+            870,
+            878
+          ],
+          "evidence": [
+            "E82",
+            "E83",
+            "E84"
+          ],
+          "requires": [
+            "p862"
+          ],
+          "optional": false
+        }
+      ]
+    }
+  ],
+  "textRewrites": false
+}
