@@ -1,0 +1,16 @@
+// Headless JS/DOM simulation. Not a browser rendering test.
+const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert');const root=path.join(__dirname,'..');let checks=0;
+function context(saved=null){const ids={},store=new Map(),timers=new Map();let timerID=0;store.set('bar-eclune-v01-settings',JSON.stringify({speed:0,bgm:0,se:0,voice:0}));function element(id=''){return ids[id]||(ids[id]={id,style:{setProperty(k,v){this[k]=v}},dataset:{},textContent:'',hidden:false,open:false,setAttribute(k,v){this[k]=v},tagName:'DIV',className:'',scrollHeight:100,querySelector:()=>element('modalbody'),querySelectorAll:()=>[],showModal(){this.open=true},close(){this.open=false},set innerHTML(v){this.html=v;for(const m of v.matchAll(/id="([^" ]+)"/g))element(m[1]);},get innerHTML(){return this.html||'';}});}const ctx={console,window:{ECLUNE_TEST:true,addEventListener(){},open(){}},document:{getElementById:element,activeElement:{tagName:'DIV'},addEventListener(){},createElement:()=>element('tmp')},localStorage:{getItem:k=>store.get(k)||null,setItem:(k,v)=>store.set(k,v)},Audio:class{constructor(src){this.src=src;this.volume=0}play(){return Promise.resolve()}pause(){}},setTimeout:(fn,ms)=>{const id=++timerID;timers.set(id,{fn,ms});return id},clearTimeout(id){timers.delete(id)},setInterval:()=>0,clearInterval(){},URL:{},Blob:class{},Date};if(saved)store.set('bar-eclune-v01-settings',JSON.stringify(saved));ctx.globalThis=ctx;vm.createContext(ctx);for(const f of ['data.js','audio-manifest.js','voice-manifest.js','engine.js','app.js'])vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),ctx,{filename:f});return {ctx,api:ctx.window.ECLUNE_TEST_API,store,ids,tick(ms){const t=[...timers].find(([id,t])=>t.ms===ms);assert(t,'scheduled delay '+ms);timers.delete(t[0]);t[1].fn();},timers};}
+
+const h=context({voice:.8,bgm:.3,se:.4,speed:0}),{api:a,ctx,ids,store}=h;
+a.act('settings');for(const id of ['voice-beni-volume','voice-ai-volume','voice-midori-volume'])assert.equal(typeof ids[id].oninput,'function');
+const clips=[];ctx.Audio=class{constructor(src){this.src=src;clips.push(this)}play(){return Promise.resolve()}pause(){}};
+const rows={};for(const c of ['紅','藍','翠']){rows[c]=ctx.window.ECLUNE_DATA.rows.find(r=>r.speaker===c);ctx.window.ECLUNE_VOICES[rows[c].id]='mock-'+c+'.wav';}
+const change=(id,value)=>ids[id].oninput({target:{value:String(value)}});
+change('voice-beni-volume',.5);a.act('voice:'+rows['紅'].id);assert.equal(clips.at(-1).volume,.4);
+change('voice-ai-volume',.2);assert.equal(clips.at(-1).volume,.4);change('voice-volume',.5);assert.equal(clips.at(-1).volume,.25);
+change('voice-beni-volume',0);assert.equal(clips.at(-1).volume,0);a.act('voice:'+rows['藍'].id);assert.equal(clips.at(-1).volume,.1);
+change('voice-midori-volume',.25);a.act('voice:'+rows['翠'].id);assert.equal(clips.at(-1).volume,.125);
+const saved=JSON.parse(store.get('bar-eclune-v01-settings'));assert.deepEqual(saved.voiceCharacters,{'紅':0,'藍':.2,'翠':.25});
+const reload=context(saved);reload.api.act('settings');assert(reload.ids['modal-inner'].innerHTML.includes('value="0.25"'));
+assert.equal(ids['voice-beni-volume-value'].textContent,'0%');console.log('Voice controls passed: legacy defaults, character isolation, master volume, mute, live update, replay, persistence.');
