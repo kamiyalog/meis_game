@@ -205,9 +205,11 @@
     return shell(n,`<article class="document-card">${html}</article>${links(n===10?[[9,'スタッフ募集へ戻る']]:[[n===28?27:21,'遺族の記録へ戻る']])}`);
   }
   function forum() {
-    const text=bodyText(37).replace(/\n\n調査結果を報告する$/, '');
+    const sections=bodyText(37).split('\n\n');
+    const invitation=sections.pop().replace(/\n［報告する］$/, '');
+    const text=sections.join('\n\n');
     const chunks=text.split(/\n\n(?=返信\n|相談者\n|2025年8月22日)/);
-    return shell(37,chunks.map(chunk=>{const [h,...rest]=chunk.split('\n');return `<section class="thread"><h2>${esc(h)}</h2>${paras(rest.join('\n'))}</section>`;}).join('')+links([[38,'調査結果を報告する']]));
+    return shell(37,chunks.map(chunk=>{const [h,...rest]=chunk.split('\n');return `<section class="thread"><h2>${esc(h)}</h2>${paras(rest.join('\n'))}</section>`;}).join('')+`<section class="report-invite" aria-label="教授への報告">${paras(invitation)}${link(38,'報告する','report-invite-button')}</section>`);
   }
   function reportPage() {
     const intro=bodyText(38).split('\n\n1　')[0];
@@ -296,6 +298,15 @@
     if(!d.open){previousFocus=document.activeElement;d.showModal();}
   }
   function wirePage() {
+    const invite=document.querySelector('.report-invite');
+    if(invite) {
+      if('IntersectionObserver' in window) {
+        const observer=new IntersectionObserver(entries=>{
+          if(entries.some(entry=>entry.isIntersecting)){invite.classList.add('is-visible');observer.disconnect();}
+        },{threshold:0.15});
+        observer.observe(invite);
+      } else invite.classList.add('is-visible');
+    }
     document.querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>showPhoto(Number(button.dataset.photo))));
     document.querySelectorAll('[data-order]').forEach(button=>button.addEventListener('click',()=>{
       const record=C.orders.find(r=>r.number===button.dataset.order);
