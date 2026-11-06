@@ -1,0 +1,99 @@
+:root{color-scheme:dark;--ink:#e5e0d6;--line:#827c70;--muted:#b2ada4;--red:#622925}*{box-sizing:border-box}body{margin:0;background:#08090a;color:var(--ink);font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif CJK JP",serif}button,input{font:inherit}button{color:inherit;background:rgba(15,16,17,.82);border:1px solid var(--line);padding:.7em 1.2em;cursor:pointer;transition:background .18s,border-color .18s}button:hover:not(:disabled){background:#353331;border-color:#e4d3b6}button:focus-visible,input:focus-visible{outline:2px solid #d7c5a5;outline-offset:4px}button:disabled{opacity:.33;cursor:default}button.red{background:linear-gradient(110deg,#381a19,#642923)}[hidden]{display:none!important}#game{position:relative;width:100%;height:100svh;min-height:520px;overflow:hidden;isolation:isolate}#scene{position:absolute;inset:0;background:center/cover url('assets/room.webp');z-index:-4}#portrait{position:absolute;width:auto;height:100%;max-width:none;left:50%;bottom:0;transform:translateX(-50%);z-index:-3;object-fit:contain}.vignette{position:absolute;inset:0;pointer-events:none;z-index:-2;background:radial-gradient(ellipse at 50% 38%,transparent 35%,#0008 100%)}header{position:absolute;top:3.2%;left:3%;right:2%;display:flex;justify-content:space-between;align-items:center;gap:12px}#heading{letter-spacing:.2em;padding:.6em .5em;border-block:1px solid #7973667a;font-size:clamp(13px,1.6vw,26px)}nav{display:flex;gap:18px}nav button{font-size:clamp(12px,1.3vw,22px);min-width:110px}#file{position:absolute;right:3%;top:29%;border:0;background:none;display:grid;justify-items:center;gap:12px;letter-spacing:.12em;font-size:clamp(14px,1.5vw,25px);padding:12px}#file:hover{background:#0003}.folder{position:relative;display:block;width:clamp(65px,8vw,130px);height:clamp(53px,6.2vw,100px);background:linear-gradient(120deg,#b7ac96,#7f7665);border:1px solid #c8bca3;border-radius:3px;box-shadow:0 6px 10px #0008;transform:rotate(-3deg)}.folder:before{content:"";position:absolute;left:4px;right:4px;top:-8px;height:15px;background:#d5d2c8;transform:rotate(2deg);z-index:-1}.folder:after{content:"";position:absolute;width:44%;height:12px;left:-1px;top:-10px;background:#ada28c;border:1px solid #c8bca3;border-bottom:0;border-radius:4px 6px 0 0}.folder i{position:absolute;inset:20% 14%;border-top:1px solid #6860507a;border-bottom:1px solid #6860507a}.folder i:after{content:"審問資料";font-style:normal;color:#3b3935;font-size:clamp(10px,1vw,17px);letter-spacing:.08em}#newDocs{font-size:11px;position:absolute;top:-5px;right:0;background:#73372d;padding:3px 7px;border-radius:2px}#dialogue{position:absolute;bottom:3.5%;left:2%;right:2%;height:37%;min-height:205px;border:1px solid var(--line);background:linear-gradient(#101112e6,#080909f5);padding:14px 4% 16px;display:flex;flex-direction:column;box-shadow:0 8px 32px #0005}.nameRow{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #81796a88;padding-bottom:8px;margin:0 2.5%;font-size:clamp(15px,1.7vw,27px);letter-spacing:.12em}#context{font:12px system-ui;color:#c7beb0;letter-spacing:.1em}.testimony{display:flex;align-items:center;flex:1;min-height:0;gap:1.2%;padding-block:8px}#text{font-size:clamp(17px,1.65vw,29px);line-height:1.9;letter-spacing:.04em;margin:0;flex:1;max-height:100%;overflow-y:auto;white-space:pre-wrap;scrollbar-width:thin}.testimony button{border:0;background:none;padding:5px;font-size:clamp(20px,2.5vw,36px)}.page{display:flex;align-items:center;gap:6px;white-space:nowrap}#counter{font-size:clamp(10px,1vw,17px);font-variant-numeric:tabular-nums;color:#c0b9aa}#actions{display:flex;justify-content:center;gap:1.4%;margin-top:5px}#actions>button{width:35%;min-height:44px;padding:.45em 1em;font-size:clamp(15px,1.7vw,26px);letter-spacing:.08em}#advance{margin-left:auto}#advance span{float:right}#toast{position:absolute;top:15%;left:50%;transform:translateX(-50%);background:#1a1d1df0;border:1px solid #c5b597;padding:12px 22px;font:14px system-ui;opacity:0;pointer-events:none;transition:opacity .2s;z-index:9}#toast.show{opacity:1}#titleScreen{position:absolute;inset:0;background:linear-gradient(90deg,#090b0de8 5%,#0a0c0ec9 45%,#10121444);padding:8vh 9vw;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}#titleScreen .titleLine{font-size:13px;letter-spacing:.5em;color:#b8ae9b;margin-bottom:22px}h1{font-weight:400;font-size:clamp(45px,6.4vw,100px);line-height:1.4;letter-spacing:.14em;margin:0}h1 span{padding-left:.4em}.titleRule{height:1px;width:110px;background:#a69982;margin:25px 0 5px}#titleScreen p{color:#bcb5aa;font-size:clamp(12px,1.1vw,18px);letter-spacing:.08em}.titleButtons{display:flex;gap:12px;margin-top:25px}.titleButtons button{min-width:135px}#titleScreen small{font:11px system-ui;color:#8d8980;margin-top:40px}dialog{width:min(860px,94vw);max-height:88svh;color:var(--ink);background:#17191a;border:1px solid #928471;padding:35px 35px 80px;box-shadow:0 30px 90px #000c}dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}#modalContent{overflow-wrap:anywhere}h2{font-size:24px;font-weight:400;letter-spacing:.15em;border-bottom:1px solid #716a5a;padding-bottom:15px;margin:0 0 22px}h3{font-size:18px;font-weight:400;letter-spacing:.06em;margin:24px 0 12px}dialog p{line-height:1.9}dialog .close{position:sticky;float:right;bottom:-65px;margin-top:20px;font:13px system-ui}#modalContent .menuGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.choices{display:grid;gap:12px}.choices button{text-align:left;line-height:1.6;padding:14px 20px}.quote{border-left:2px solid #97846c;padding:15px 20px;background:#0003;font-size:18px;white-space:pre-wrap}.tabs{display:flex;gap:10px;margin-bottom:20px}.tabs .selected{background:#534a3c}.doc{border-top:1px solid #5b554c;padding:14px 0}.doc h3{margin:4px 0 10px}.doc p{margin:0;color:#c6c1b7;font-size:15px}.quiet{font:13px/1.8 system-ui;color:#aaa69d}.sliders label{display:grid;grid-template-columns:160px 1fr 42px;align-items:center;gap:15px;padding:11px 0;font-size:15px}.sliders input{width:100%;accent-color:#b6a080}.sliders output{text-align:right;font:12px system-ui}.notice{border:1px solid #665c4d;padding:12px 16px;font:13px/1.8 system-ui;color:#bab4aa}.confirmActions{display:flex;justify-content:flex-end;gap:16px;margin-top:25px}.resultRank{font-size:clamp(28px,4vw,60px);letter-spacing:.17em;color:#d2c2a1}#ending{position:absolute;inset:0;padding:8vh 7vw;background:linear-gradient(90deg,#07090be8,#07090b55);display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start}#ending .endNo{font:13px system-ui;letter-spacing:.4em;color:#d0c6b3}#ending h2{border:0;font-size:clamp(25px,3.5vw,50px);margin:15px 0}#ending p{max-width:750px;font-size:clamp(16px,1.4vw,22px);line-height:2;text-shadow:0 2px 6px #000}#ending .endButtons{display:flex;gap:12px;margin-top:20px}.endButtons button{font-size:14px}@media(max-width:760px){#game{min-height:460px}header{top:2%;gap:6px}#heading{font-size:12px;letter-spacing:.04em}nav{gap:7px}nav button{font-size:11px;min-width:0;padding:8px}#portrait{height:92%;bottom:4%}#file{right:2%;top:28%;gap:6px}#dialogue{height:42%;padding:10px 12px;bottom:2%;min-height:225px}.nameRow{font-size:16px}.testimony{gap:3px}#text{font-size:16px;line-height:1.85}#context{font-size:10px}.page{gap:0;flex-direction:column}#actions>button{width:46%;font-size:15px}.titleButtons{flex-direction:column;width:200px;gap:10px}#titleScreen{padding:5vh 7vw}#titleScreen small{margin-top:20px}.sliders label{grid-template-columns:110px 1fr 32px;gap:8px;font-size:13px}dialog{padding:24px 20px 65px}.quote{font-size:16px}.tabs button{font-size:12px;padding:8px 12px}}@media(max-height:550px) and (orientation:landscape){#game{min-height:320px}#dialogue{min-height:0;height:43%;padding:6px 20px}.nameRow{font-size:13px;padding-bottom:3px}#text{font-size:14px;line-height:1.6}#actions>button{min-height:30px;padding:3px 12px;font-size:13px}.testimony{padding:4px 0}#file{top:24%;font-size:12px}.folder{width:60px;height:45px}h1{font-size:40px}#titleScreen{padding-block:15px}.titleLine{margin-bottom:8px!important}.titleRule{margin-top:10px}.titleButtons{flex-direction:row;width:auto;margin-top:10px}.titleButtons button{min-width:110px}#titleScreen small{margin-top:15px}}
+/* Keep hands above the enlarged two-line dialogue window. */
+#portrait{height:70%;bottom:30%}
+@media(max-width:760px){#portrait{height:65%;bottom:35%}}
+@media(max-height:550px) and (orientation:landscape){#portrait{height:67%;bottom:33%}}
+
+/* Senior guidance takes place outside the interrogation rooms. */
+#portrait.senior{height:91%;bottom:-3%;left:43%}
+#roomTransition{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;z-index:20;transition:opacity .4s ease}
+#roomTransition.active{pointer-events:auto}
+#roomTransition.black{opacity:1}
+#game:has(#dialogue:not([hidden])){cursor:default}
+@media(max-width:760px){#portrait.senior{height:80%;bottom:12%;left:45%}}
+
+/* Notices stay below the character eye line, directly above dialogue. */
+#toast{top:auto;bottom:calc(40.5% + 14px);left:3%;transform:none;max-width:min(520px,85vw);font-size:14px}
+@media(max-width:760px){#toast{bottom:calc(44% + 10px);left:3%;font-size:12px;padding:9px 14px}}
+@media(max-height:550px) and (orientation:landscape){#toast{bottom:calc(46% + 8px);font-size:11px;padding:6px 12px}}
+
+/* Ceremonial overlays. The three creed lines are deliberately microtype. */
+#stageCue{position:fixed;inset:0;z-index:40;display:grid;place-items:center;overflow:hidden;pointer-events:auto;color:#e5dfd2;cursor:default}
+#stageCue::before{content:"";position:absolute;inset:0;pointer-events:none}
+.cue-start{background:radial-gradient(ellipse at 50% 44%,#222a2af5,#070a0bf9 68%);animation:cueVeil 3s both}
+.cue-start::before{background:repeating-linear-gradient(0deg,transparent 0 3px,#d7d5c102 3px 4px);box-shadow:inset 0 0 140px #000}
+.cue-start-content{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;animation:sealReveal 3s both}
+.seal-frame{width:clamp(112px,20vh,215px);position:relative}
+.seal-frame::before{content:"";position:absolute;inset:14% -18%;border:1px solid #b2b5aa20;border-radius:50%;transform:rotateX(25deg);animation:sealOrbit 3s both}
+.inquisitor-mark{width:100%;height:auto;display:block;filter:drop-shadow(0 0 14px #c8c6ab23)}
+.mark-shield,.mark-eye{stroke-dasharray:850;stroke-dashoffset:850;animation:engrave 1.15s .12s ease-out forwards}
+.mark-rays{animation:rayReveal 1.1s .35s both}
+.seal-creed{display:flex;flex-direction:column;gap:4px;font-size:clamp(6px,.7vw,9px);line-height:1.6;letter-spacing:.32em;color:#a5a99b;opacity:.43;margin:6px 0 18px;padding-left:.32em}
+.cue-rule{width:170px;height:1px;background:linear-gradient(90deg,transparent,#a8a994a0,transparent);margin-bottom:17px;transform-origin:center;animation:ruleReveal 1s .3s both}
+#stageCue .cue-kicker{display:block;margin:0 0 8px;font:9px/1.4 system-ui,sans-serif;font-weight:300;letter-spacing:.55em;color:#9da69f;padding-left:.55em}
+#stageCue .cue-title{border:0;margin:0;padding:0 0 0 .45em;font-size:clamp(25px,4vw,52px);font-weight:400;line-height:1.5;letter-spacing:.45em;text-shadow:0 0 30px #d7d4ba20}
+.cue-index{font:9px/1.5 system-ui;letter-spacing:.3em;color:#7d8982;margin-top:15px;padding-left:.3em}
+.cue-phase{background:#070b0e85;backdrop-filter:blur(3px);animation:cueVeil 1.7s both}
+.cue-strip{width:100%;display:flex;align-items:center;justify-content:center;gap:clamp(20px,4vw,80px);padding:28px 4vw;text-align:center;background:linear-gradient(90deg,transparent,#0b1216ed 25%,#0b1216ed 75%,transparent);border-block:1px solid #979d8d28;animation:stripReveal 1.7s both}
+.cue-strip>i{display:block;height:1px;width:min(13vw,180px);background:linear-gradient(90deg,transparent,#b4b4a48c)}
+.cue-strip>i:last-child{transform:rotate(180deg)}
+#stageCue.cue-phase .cue-title{font:300 clamp(23px,3.8vw,46px)/1.4 system-ui,sans-serif;letter-spacing:.2em;padding-left:.2em}
+.cue-title b{font-weight:300;color:#e6ddc6}
+.cue-subtitle{display:block;font-size:11px;letter-spacing:.5em;color:#b6b9ae;padding-left:.5em;margin-top:10px}
+.cue-finish{background:#080c0f46;animation:cueVeil 1.5s both}
+.cue-finish .cue-strip{background:linear-gradient(90deg,transparent,#0d1315e8 30%,#0d1315e8 70%,transparent);padding:19px 4vw;animation-duration:1.5s;border-color:#9da59020}
+#stageCue.cue-finish .cue-title{font-size:clamp(20px,2.5vw,32px);letter-spacing:.35em;padding-left:.35em;color:#bdc4be;text-shadow:none}
+#stageCue.cue-finish .cue-kicker{font-size:8px;color:#76847a}
+@keyframes cueVeil{0%{opacity:0}14%,82%{opacity:1}100%{opacity:0}}
+@keyframes sealReveal{0%{opacity:0;transform:scale(.96) translateY(10px);filter:blur(3px)}22%,80%{opacity:1;transform:scale(1) translateY(0);filter:blur(0)}100%{opacity:0;transform:scale(1.015);filter:blur(1px)}}
+@keyframes engrave{to{stroke-dashoffset:0}}
+@keyframes rayReveal{from{opacity:0}to{opacity:1}}
+@keyframes sealOrbit{from{opacity:0;transform:rotate(-18deg) scale(.9)}45%,100%{opacity:1;transform:rotate(0) scale(1)}}
+@keyframes ruleReveal{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes stripReveal{0%{opacity:0;transform:translateY(8px)}20%,80%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-4px)}}
+@media(max-height:550px){.seal-frame{width:100px}.seal-creed{margin:2px 0 8px;font-size:6px;gap:1px}.cue-rule{margin-bottom:8px}.cue-index{margin-top:7px}#stageCue.cue-start .cue-title{font-size:26px}#stageCue .cue-kicker{font-size:8px}}
+@media(prefers-reduced-motion:reduce){#stageCue,#stageCue *{animation:none!important;transition:none!important}.mark-shield,.mark-eye{stroke-dashoffset:0}.seal-frame::before{animation:none!important}}
+
+/* The updated line keeps its marker when the player returns to it. */
+#dialogue.testimony-updated #context {
+  padding: .3em .7em;
+  border: 1px solid #bb9b62;
+  border-radius: 2px;
+  background: #382d1e;
+  color: #f7dda8;
+  white-space: nowrap;
+}
+#dialogue.testimony-pulse {
+  animation: testimony-frame 1.65s ease-out both;
+}
+#dialogue.testimony-pulse #text {
+  animation: testimony-text 1.65s ease-out both;
+}
+#dialogue.testimony-pulse::after {
+  content: '';
+  position: absolute;
+  inset: -2px -1px auto;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #f7dca1 25%, #fff3cf 50%, #f7dca1 75%, transparent);
+  box-shadow: 0 0 12px #e8b965;
+  pointer-events: none;
+  animation: testimony-trace 1.65s ease-out both;
+}
+@keyframes testimony-frame {
+  0%, 100% { border-color: var(--line); box-shadow: 0 8px 32px #0005; }
+  14% { border-color: #fbe0a9; box-shadow: inset 0 0 36px #c8a36340, 0 0 26px #edbf7270; }
+  48% { border-color: #dbb878; box-shadow: inset 0 0 24px #b9915230, 0 0 12px #cda76745; }
+}
+@keyframes testimony-text {
+  0%, 100% { color: var(--ink); text-shadow: none; }
+  15%, 45% { color: #fff0ca; text-shadow: 0 0 12px #d7ac6290; }
+}
+@keyframes testimony-trace {
+  0% { opacity: 0; transform: scaleX(.12); }
+  20% { opacity: 1; transform: scaleX(1); }
+  100% { opacity: 0; transform: scaleX(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #dialogue.testimony-pulse, #dialogue.testimony-pulse #text { animation: none; }
+  #dialogue.testimony-pulse::after { display: none; }
+}
