@@ -12,7 +12,14 @@ const saveOptions=()=>{try{localStorage.setItem('shinmon-options',JSON.stringify
 function applyVolumes(){door.volume=Math.max(0,Math.min(1,volumes.master));bgm.volume=Math.max(0,Math.min(1,volumes.master*volumes.bgm));voice.volume=Math.max(0,Math.min(1,volumes.master*volumes.voice*(volumes.characters[activeWho]??1)))}
 function music(n){if(n===bgmName)return;bgmName=n;bgm.pause();if(!n){bgm.removeAttribute('src');return}bgm.src=`assets/bgm-${n}.mp3`;applyVolumes();bgm.play().catch(()=>{});}
 function stopVoice(){voiceToken++;voice.pause();voice.removeAttribute('src')}
-function playVoice(id){stopVoice();const line=D.lines[id],url=window.VOICE_MANIFEST?.[id];if(!line||!url)return;activeWho=line.who;voice.src=url;applyVolumes();voice.play().catch(()=>{});}
+function playVoice(id){
+ stopVoice();
+ const line=D.lines[id];
+ if(!line)return;
+ const token=voiceToken;
+ activeWho=line.who;applyVolumes();
+ window.playRecordedVoice(voice,id,()=>token===voiceToken).catch(()=>{});
+}
 const character=()=>C[state.ci];const phase=()=>character().phases[state.pi];const statement=()=>phase().statements[state.si];
 const key=()=>`${state.ci}:${state.pi}`;const foundCount=i=>Object.keys(state.found).filter(k=>k.startsWith(i+':')).length;
 const rank=i=>foundCount(i)===C[i].phases.length?'P':foundCount(i)>0?'G':'B';
@@ -86,7 +93,11 @@ function migrateStatementOrder(){
 }
 function restore(s){if(!validState(s)){toast('保存データを読み込めません');return}closeModal();cancelTransition();stopVoice();state=clone(s);if(state.v===1)migrateStatementOrder();visualPlace=null;music(state.mode==='ending'?'':state.ci===6&&state.pi>=4?'007':'008');render();}
 function options(){let controls=[['全体音量','master'],['ボイス全体','voice'],['BGM','bgm'],...D.stats.map((s,i)=>[s.name,'char'+i])];showModal(`<h2>オプション</h2><div class="sliders">${controls.map(([name,id])=>{let v=id.startsWith('char')?(volumes.characters[+id.slice(4)]??1):volumes[id];return`<label for="vol-${id}"><span>${name}</span><input id="vol-${id}" data-volume="${id}" type="range" min="0" max="100" step="1" value="${Math.round(v*100)}"><output for="vol-${id}">${Math.round(v*100)}%</output></label>`}).join('')}</div><p class="quiet">各キャラのボイス音量には「全体音量」と「ボイス全体」が掛かります。0%で消音。設定は自動保存されます。</p><button id="resetVolumes">音量を初期値に戻す</button>`);document.querySelectorAll('[data-volume]').forEach(input=>input.oninput=()=>{let k=input.dataset.volume,v=+input.value/100;if(k.startsWith('char'))volumes.characters[+k.slice(4)]=v;else volumes[k]=v;input.nextElementSibling.textContent=input.value+'%';saveOptions()});$('resetVolumes').onclick=()=>{volumes={master:1,voice:1,bgm:.45,characters:Array(D.stats.length).fill(1)};saveOptions();options()};}
-function credits(){showModal('<h2>クレジット</h2><p>審問の時間です。</p><p>制作：高無メイ</p><p class="notice">ボイス収録前の確認版です。音声は台詞IDに対応するファイルを登録して組み込めます。BGMは提供素材007・008を使用しています。入退室時のみ、扉のSE（se-014）を使用しています。</p>')}
+function credits(){
+ const cast=[D.stats[7],...D.stats.slice(0,7),D.stats[8]];
+ const rows=cast.map(({name,actor})=>`<div><dt>${esc(name)}</dt><dd>${esc(actor)}</dd></div>`).join('');
+ showModal(`<h2>クレジット</h2><p>審問の時間です。</p><h3>出演</h3><dl class="cast-list">${rows}</dl><hr class="credits-divider"><p>制作：高無メイ</p>`);
+}
 function showEnding(n){state.mode='ending';state.end=n;stopVoice();music('');render();autosave();try{const a=loadJSON('shinmon-clears',[]);if(!a.includes(n)){a.push(n);localStorage.setItem('shinmon-clears',JSON.stringify(a))}}catch{}}
 function meetLast(){
  if(state.mode!=='ending'||![4,5].includes(state.end))return;

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ボイス確認｜審問の時間です。</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="data.js"></script>
+<script defer src="audio-manifest.js"></script><script defer src="voice-playback.js"></script>
+<script defer src="voice-check.js"></script>
+<link rel="icon" href="./shinmon-icon.svg" type="image/svg+xml"></head>
+<body class="voice-check">
+<main class="voice-panel">
+ <a class="voice-link" href="index.html">〈 タイトルへ</a>
+ <h1>ボイス確認</h1>
+ <form id="voice-gate">
+  <label for="voice-password">確認用パス</label>
+  <input id="voice-password" type="password" inputmode="numeric" required>
+  <button type="submit">入る</button>
+  <p id="gate-status" role="status"></p>
+ </form>
+ <section id="voice-content" hidden>
+  <label for="voice-role">役名・出演</label>
+  <select id="voice-role"></select>
+  <p id="voice-count"></p>
+  <audio id="voice-player" controls hidden></audio>
+  <p id="voice-status" role="status"></p>
+  <ol id="voice-lines"></ol>
+ </section>
+</main>
+</body>
+</html>
